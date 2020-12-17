@@ -1,0 +1,43 @@
+From: Alex Gonzalez <alexg@balena.io>
+Date: Tue, 8 Dec 2020 17:32:14 +0100
+Subject: [PATCH] ccimx8x: Use BalenaOS partition table
+
+Signed-off-by: Alex Gonzalez <alexg@balena.io>
+---
+ board/digi/ccimx8/ccimx8.c       |  1 +
+ include/configs/ccimx8x_common.h | 10 ++++++++++
+ 2 files changed, 11 insertions(+)
+
+diff --git a/board/digi/ccimx8/ccimx8.c b/board/digi/ccimx8/ccimx8.c
+index 05eb4a64e3f4..2f70d10fae98 100644
+--- a/board/digi/ccimx8/ccimx8.c
++++ b/board/digi/ccimx8/ccimx8.c
+@@ -133,6 +133,7 @@ void generate_partition_table(void)
+ 		android_partition_table = ANDROID_4GB_PARTITION_TABLE;
+ 	}
+ 
++	linux_partition_table = BALENA_PARTITION_TABLE;
+ 	if (!env_get("parts_linux"))
+ 		env_set("parts_linux", linux_partition_table);
+ 
+diff --git a/include/configs/ccimx8x_common.h b/include/configs/ccimx8x_common.h
+index d3928e402f6d..62e0f841e4df 100644
+--- a/include/configs/ccimx8x_common.h
++++ b/include/configs/ccimx8x_common.h
+@@ -229,6 +229,16 @@
+ 	"part9_uuid=dc83dea8-c467-45dc-84eb-5e913daec17e\0" \
+ 	"part10_uuid=df0dba76-d5e0-11e8-9f8b-f2801f1b9fd1\0"
+ 
++#define BALENA_PARTITION_TABLE \
++	"\"uuid_disk=${uuid_disk};" \
++	"start=2MiB," \
++	"name=resin-boot,size=64MiB,uuid=${part1_uuid};" \
++	"name=resin-rootA,size=320MiB,uuid=${part2_uuid};" \
++	"name=resin-rootB,size=320MiB,uuid=${part3_uuid};" \
++	"name=resin-state,size=20MiB,uuid=${part4_uuid};" \
++	"name=resin-data,size=-,uuid=${part5_uuid};" \
++	"\""
++
+ #define LINUX_4GB_PARTITION_TABLE \
+ 	"\"uuid_disk=${uuid_disk};" \
+ 	"start=2MiB," \
