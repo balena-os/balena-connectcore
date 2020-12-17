@@ -1,0 +1,82 @@
+#
+# U-Boot bootscript for EMMC/SD images created by Yocto.
+#
+
+# Back up environment variables
+setenv ORIG_overlays ${overlays}
+setenv ORIG_extra_bootargs ${extra_bootargs}
+
+# Set SOC type to "imx8qxp" if not already defined by U-Boot
+if test ! -n "${soc_type}"; then
+	setenv soc_type "imx8qxp"
+fi
+
+#
+# Determine overlays to apply depending on the hardware capabilities
+# described by the HWID, SOM version, and carrier board version.
+#
+if test -n "${module_ram}"; then
+	setexpr module_has_wifi ${hwid_3} \& 1
+	setexpr module_has_bt ${hwid_3} \& 2
+	setexpr module_has_bt ${module_has_bt} / 2
+
+	if test "${module_has_bt}" = "1" && test -z "${disable_bt}"; then
+		setenv overlays _ov_som_bt_ccimx8x.dtbo ${overlays}
+	fi
+
+	if test "${module_has_wifi}" = "1" && test -z "${disable_wifi}"; then
+		setenv overlays _ov_som_wifi_ccimx8x.dtbo ${overlays}
+	fi
+else
+	#
+	# Set overlays depending on the hardware variant
+	#
+	if test "${module_variant}" = "0x01"; then
+		setenv overlays _ov_som_bt_ccimx8x.dtbo _ov_som_wifi_ccimx8x.dtbo ${overlays}
+	elif test "${module_variant}" = "0x02"; then
+		setenv overlays _ov_som_bt_ccimx8x.dtbo _ov_som_wifi_ccimx8x.dtbo ${overlays}
+	elif test "${module_variant}" = "0x04"; then
+		setenv overlays _ov_som_bt_ccimx8x.dtbo _ov_som_wifi_ccimx8x.dtbo ${overlays}
+	fi
+fi
+
+# Apply QXP overlay if the SOC type is "imx8qxp"
+if test "${soc_type}" = "imx8qxp"; then
+	setenv overlays _ov_som_quad_ccimx8x.dtbo ${overlays}
+fi
+
+# Apply SBCv3 overlay if the board_version is 3 or lesser
+if test "${board_version}" -le "3"; then
+	setenv overlays _ov_board_v1-v3_ccimx8x-sbc-pro.dtbo ${overlays}
+fi
+
+if env exists resin_set_kernel_root; then
+	true
+else
+	env default -a
+	run partition_mmc_linux
+fi
+setenv resin_kernel_load_addr ${loadaddr}
+run resin_set_kernel_root
+run set_os_cmdline
+env set bootargs ${bootargs} ${resin_kernel_root} ${os_cmdline} ${extra_bootargs}
+load mmc ${mmcbootdev}:${mmcpart} ${lzipaddr} ${imagegz}
+setexp kernel_addr ${fileaddr} + ${filesize}
+unzip ${lzipaddr} ${kernel_addr}
+load mmc ${mmcbootdev}:${mmcpart} ${fdt_addr} ${fdt_file}
+for overlay in ${overlays}; do
+	echo "Applying overlay ${overlay}"
+	fdt addr ${fdt_addr}
+	load mmc ${mmcbootdev}:${mmcpart} ${initrd_addr} ${overlay}
+	fdt resize ${filesize}
+	fdt apply ${initrd_addr}
+done
+booti ${kernel_addr} - ${fdt_addr}
+
+# We only get here in case of an error on the boot commands.
+
+# Undo changes to environment variables
+setenv overlays ${ORIG_overlays}
+setenv ORIG_overlays
+setenv extra_bootargs ${ORIG_extra_bootargs}
+setenv ORIG_extra_bootargs
