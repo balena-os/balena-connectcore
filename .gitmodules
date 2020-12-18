@@ -10,3 +10,6 @@
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky.git
+[submodule "layers/meta-digi"]
+	path = layers/meta-digi
+	url = https://github.com/digi-embedded/meta-digi.git
