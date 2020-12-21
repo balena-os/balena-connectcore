@@ -1,1 +1,17 @@
-[]
+- commits:
+    - subject: Add support for the ConnectCore 8X SBC Pro modules
+      hash: cc44af50702286070b9e21f37ba526a3ce5e7bb6
+      body: |
+        This commit add the svg icon and the device type definition for Digi's
+        ConnectCore 8X SBC Pro.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Add support for the ConnectCore 8X SBC Pro modules
+        changelog-entry: Add support for the ConnectCore 8X SBC Pro modules
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.65.1+rev1
+  date: 2020-12-21T14:22:03.690Z
