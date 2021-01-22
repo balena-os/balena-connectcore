@@ -1,6 +1,16 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
+CC_SD_BOOT = 'Configure the boot microswitches (S2) for SD boot (SW1 OFF and SW2 ON).'
+CC_EMMC_BOOT = 'Configure the boot microswitches (S2) for internal (eMMC) boot (SW1 OFF and SW2 OFF).'
+CC_VARIANT_WARNING = 'Make sure your SBC contains a system-on-module with a 2GB i.MX8X quad B0 system-on-chip. Different module variants are not supported by this device type.'
+
+postProvisioningInstructions = [
+        instructions.BOARD_SHUTDOWN
+        instructions.REMOVE_INSTALL_MEDIA
+        instructions.BOARD_REPOWER
+]
+
 module.exports =
 	version: 1
 	slug: 'ccimx8x-sbc-pro'
@@ -10,7 +20,18 @@ module.exports =
 	state: 'new'
 	community: true
 
-	instructions: commonImg.instructions
+	stateInstructions:
+		postProvisioning: postProvisioningInstructions
+
+	instructions: [
+		instructions.ETCHER_SD
+		instructions.EJECT_SD
+		CC_VARIANT_WARNING
+		CC_SD_BOOT
+		instructions.FLASHER_WARNING
+		CC_EMMC_BOOT
+	].concat(postProvisioningInstructions)
+
 	gettingStartedLink:
 		windows: 'https://www.balena.io/docs/learn/getting-started/ccimx8x-sbc-pro/nodejs/'
 		osx: 'https://www.balena.io/docs/learn/getting-started/ccimx8x-sbc-pro/nodejs/'
