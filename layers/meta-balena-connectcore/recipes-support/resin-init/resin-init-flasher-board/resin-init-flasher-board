@@ -10,8 +10,8 @@ seek_blocks=32
 echo 0 > /sys/block/mmcblk0boot0/force_ro
 echo 0 > /sys/block/mmcblk0boot1/force_ro
 # Erase partition table - the bootloader is programmed at an offset that leaves the GPT untouched
-dd if=/dev/zero of=/dev/mmcblk0boot0
-dd if=/mnt/boot/${uboot_file} of= /dev/mmcblk0boot0 conv=fdatasync seek=$seek_blocks bs=$block_size
+dd if=/dev/zero of=/dev/mmcblk0boot0 > /dev/null
+dd if=/mnt/boot/${uboot_file} of=/dev/mmcblk0boot0 conv=fdatasync seek=$seek_blocks bs=$block_size
 # Erase uboot environment
 dd if=/dev/zero of=/dev/mmcblk0boot1
 exit 0
