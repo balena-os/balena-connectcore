@@ -3,11 +3,12 @@ deviceTypesCommon = require '@resin.io/device-types/common'
 
 CC_SD_BOOT = 'Configure the boot microswitches (S2) for SD boot (SW1 OFF and SW2 ON).'
 CC_EMMC_BOOT = 'Configure the boot microswitches (S2) for internal (eMMC) boot (SW1 OFF and SW2 OFF).'
-CC_VARIANT_WARNING = 'Make sure your SBC contains a system-on-module with a 2GB i.MX8X quad B0 system-on-chip. Different module variants are not supported by this device type.'
+CC_VARIANT_WARNING = 'Make sure your SBC contains a system-on-module with a 2GB i.MX8X quad B0 system-on-chip. Different module variants are not supported by this device type and will not boot.'
 
 postProvisioningInstructions = [
         instructions.BOARD_SHUTDOWN
         instructions.REMOVE_INSTALL_MEDIA
+        CC_EMMC_BOOT
         instructions.BOARD_REPOWER
 ]
 
@@ -29,7 +30,7 @@ module.exports =
 		CC_VARIANT_WARNING
 		CC_SD_BOOT
 		instructions.FLASHER_WARNING
-		CC_EMMC_BOOT
+		instructions.CONNECT_AND_BOOT
 	].concat(postProvisioningInstructions)
 
 	gettingStartedLink:
