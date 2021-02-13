@@ -7,8 +7,21 @@
 
 BALENA_STORAGE_ccimx8x_sbc_pro = "overlay2"
 
-SOC_REVISION_ccimx8x = "C0"
-SOM_MEMORY_VARIANT_ccimx8x = "2GB_32bit"
+# Current (01/2021) module variants
+# 0x01: 1GB, 32bit
+# 0x02: 2GB, 32bit
+# 0x03: 2GB, 32bit
+# 0x04: 1GB, 16bit
+# 0x05: 1GB, 16bit
+# 0x06: 512MB, 16bit
+
+# This can be B0 or C0 depending on the SOC type
+SOC_REVISION_ccimx8x = "B0"
+# For imx8dx SOCs use 16bit
+SOC_BUS_WIDTH_ccimx8x = "32bit"
+# Supported memory values are 512 MB / 1GB / 2GB
+SOC_MEMORY_ccimx8x = "2GB"
+SOM_MEMORY_VARIANT_ccimx8x = "${SOC_MEMORY}_${SOC_BUS_WIDTH}"
 
 # Set this to 1 if development image is desired
 #DEVELOPMENT_IMAGE = "1"
