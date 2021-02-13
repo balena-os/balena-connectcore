@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add instructions for SD boot
+      hash: 5d5c6bfdae557f601ccedf4a87a2814c24d2709b
+      body: |
+        The SBC has a boot microswitch that needs to be configured appropriately
+        to boot from either SD card or internal eMMC storage.
+      footer:
+        Changelog-entry: Add instructions for SD boot
+        changelog-entry: Add instructions for SD boot
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.68.1+rev3
+  date: 2021-02-13T18:14:49.615Z
+- commits:
     - subject: Default to B0 / 2GB / 32bits module variants
       hash: 61546866dd1e9d4c8d4ee7e2b9ec485c47b01593
       body: |

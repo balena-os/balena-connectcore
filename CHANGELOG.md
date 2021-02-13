@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.68.1+rev3
+## (2021-02-13)
+
+* Add instructions for SD boot [Alex Gonzalez]
+
 # v2.68.1+rev2
 ## (2021-02-13)
 
