@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.68.1+rev2
+## (2021-02-13)
+
+* Default to B0 / 2GB / 32bits module variants [Alex Gonzalez]
+
 # v2.68.1+rev1
 ## (2021-02-13)
 

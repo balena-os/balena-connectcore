@@ -1,4 +1,18 @@
 - commits:
+    - subject: Default to B0 / 2GB / 32bits module variants
+      hash: 61546866dd1e9d4c8d4ee7e2b9ec485c47b01593
+      body: |
+        Currently (01/2021) stocks are still serving units with a B0 SOC type.
+      footer:
+        Changelog-entry: Default to B0 / 2GB / 32bits module variants
+        changelog-entry: Default to B0 / 2GB / 32bits module variants
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.68.1+rev2
+  date: 2021-02-13T17:37:05.746Z
+- commits:
     - subject: Update meta-balena from v2.65.1 to v2.68.1
       hash: 3b4ff5feb570df546c9f6fbca019a35861854509
       body: |
