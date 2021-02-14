@@ -1,0 +1,26 @@
+From: Alex Gonzalez <alexg@balena.io>
+Date: Sun, 14 Feb 2021 17:28:08 +0100
+Subject: [PATCH] ccimx8x_common.h: BalenaOS requires import/export environment
+ functionality
+
+The ccimx8x BSP undefined the import/export environment functionality
+which is required by BalenaOS.
+
+Signed-off-by: Alex Gonzalez <alexg@balena.io>
+---
+ include/configs/ccimx8x_common.h | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/include/configs/ccimx8x_common.h b/include/configs/ccimx8x_common.h
+index a6db41d948b6..81653eafcbbb 100644
+--- a/include/configs/ccimx8x_common.h
++++ b/include/configs/ccimx8x_common.h
+@@ -207,8 +207,6 @@
+ #define CONFIG_SYS_PBSIZE		(CONFIG_SYS_CBSIZE + \
+ 					sizeof(CONFIG_SYS_PROMPT) + 16)
+ 
+-#undef CONFIG_CMD_EXPORTENV
+-#undef CONFIG_CMD_IMPORTENV
+ #undef CONFIG_CMD_IMLS
+ #undef CONFIG_CMD_CRC32
+ #undef CONFIG_BOOTM_NETBSD
