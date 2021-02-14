@@ -1,4 +1,30 @@
 - commits:
+    - subject: Add u-boot environment import/export functionality
+      hash: 68f9a81cd07ca1d478ca6ed85a234ba52bc0cc7d
+      body: |
+        The import/export environment functionality is needed for BalenaOS to
+        work properly.
+      footer:
+        Changelog-entry: Add u-boot environment import/export functionality
+        changelog-entry: Add u-boot environment import/export functionality
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Correct provisioning instructions for ccimx8x-sbc-pro
+      hash: 09776f9eb2eb1c84541800395bb3fcbb6180700b
+      body: |
+        The provisioning instructions were missing steps.
+      footer:
+        Changelog-entry: Correct provisioning instructions for ccimx8x-sbc-pro
+        changelog-entry: Correct provisioning instructions for ccimx8x-sbc-pro
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.68.1+rev4
+  date: 2021-02-14T17:52:35.210Z
+- commits:
     - subject: Add instructions for SD boot
       hash: 5d5c6bfdae557f601ccedf4a87a2814c24d2709b
       body: |

@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.68.1+rev4
+## (2021-02-14)
+
+* Add u-boot environment import/export functionality [Alex Gonzalez]
+* Correct provisioning instructions for ccimx8x-sbc-pro [Alex Gonzalez]
+
 # v2.68.1+rev3
 ## (2021-02-13)
 
