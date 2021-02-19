@@ -1,4 +1,21 @@
 - commits:
+    - subject: Add bluetooth support
+      hash: 88cd638c13dabfe50b7bf3703149b51be379bdc7
+      body: |
+        This script initializes the bluetooth interface. It is modified from the
+        one in meta-digi not to require the initscript package.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Add bluetooth support
+        changelog-entry: Add bluetooth support
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.68.1+rev5
+  date: 2021-02-19T18:25:06.367Z
+- commits:
     - subject: Add u-boot environment import/export functionality
       hash: 68f9a81cd07ca1d478ca6ed85a234ba52bc0cc7d
       body: |

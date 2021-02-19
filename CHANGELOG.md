@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.68.1+rev5
+## (2021-02-19)
+
+* Add bluetooth support [Alex Gonzalez]
+
 # v2.68.1+rev4
 ## (2021-02-14)
 
