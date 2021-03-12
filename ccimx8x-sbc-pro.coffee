@@ -44,10 +44,10 @@ module.exports =
 
 	yocto:
 		machine: 'ccimx8x-sbc-pro'
-		image: 'resin-image-flasher'
-		fstype: 'resinos-img'
+		image: 'balena-image-flasher'
+		fstype: 'balenaos-img'
 		version: 'yocto-dunfell'
-		deployArtifact: 'resin-image-flasher-ccimx8x-sbc-pro.resinos-img'
+		deployArtifact: 'balena-image-flasher-ccimx8x-sbc-pro.balenaos-img'
 		compressed: true
 
 	configuration:
