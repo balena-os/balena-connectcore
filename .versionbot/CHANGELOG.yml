@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update meta-balena from v2.72.1 to v2.73.10
+      hash: 613e47edaf7d630fa529011c98b910d0bd34ccc1
+      body: |
+        Update to latest revision.
+      footer:
+        Changelog-type: patch
+        changelog-type: patch
+        Changelog-entry: Update meta-balena from v2.72.1 to v2.73.10
+        changelog-entry: Update meta-balena from v2.72.1 to v2.73.10
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update  balena-yocto-scripts from v1.11.1 to v1.12.8
+      hash: ae5fd27ee87d944dedbe018a2c3eecc9fa838d2e
+      body: |
+        Update to latest revision.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update  balena-yocto-scripts from v1.11.1 to v1.12.8
+        changelog-entry: Update  balena-yocto-scripts from v1.11.1 to v1.12.8
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.73.10+rev1
+  date: 2021-04-15T11:07:29.685Z
+- commits:
     - subject: Rename resin image types to balena
       hash: 4758caf72e99ac1fae2d174420be01c9522e605f
       body: |
