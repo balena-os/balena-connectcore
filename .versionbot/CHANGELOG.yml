@@ -1,4 +1,27 @@
 - commits:
+    - subject: Revert to balena-yocto-scripts v1.11.1
+      hash: cab3479ff72c82e2a951367aca59042f3061185c
+      body: |
+        This reverts commit ae5fd27ee87d944dedbe018a2c3eecc9fa838d2e.
+
+        This updated version installs a newer docker version in the
+        yocto-build-env helper container that has networking issues when run in
+        a docker in docker configuration with the docker 17.05.0-ce available in
+        the Ubuntu 17.04 builder nodes.
+
+        This will need to be resolved before updating.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Revert to balena-yocto-scripts v1.11.1
+        changelog-entry: Revert to balena-yocto-scripts v1.11.1
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.73.10+rev2
+  date: 2021-04-16T08:25:59.103Z
+- commits:
     - subject: Update meta-balena from v2.72.1 to v2.73.10
       hash: 613e47edaf7d630fa529011c98b910d0bd34ccc1
       body: |
