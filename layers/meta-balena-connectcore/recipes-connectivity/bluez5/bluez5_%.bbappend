@@ -26,6 +26,8 @@ SRC_URI_append_ccimx8m = " ${QCA65XX_COMMON_PATCHES}"
 
 inherit update-rc.d
 
+DEPENDS += "ell"
+
 do_install_append() {
 	install -d ${D}${sysconfdir}/init.d/
 	install -m 0755 ${WORKDIR}/bluetooth-init ${D}${sysconfdir}/bluetooth-init
