@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.73.10+rev3
+## (2021-05-24)
+
+* Add balena-yocto-scripts upstream source [Alex Gonzalez]
+
 # v2.73.10+rev2
 ## (2021-04-16)
 
