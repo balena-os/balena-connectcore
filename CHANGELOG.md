@@ -1,6 +1,32 @@
 Change log
 -----------
 
+# v2.79.7+rev1
+## (2021-06-08)
+
+
+<details>
+<summary> Update meta-balena from v2.79.4 to v2.79.7 [Mark Corbin] </summary>
+
+> ## meta-balena-2.79.7
+> ### (2021-05-26)
+> 
+> * meta-balena: rename connectivity packagegroup [Mark Corbin]
+> 
+> ## meta-balena-2.79.6
+> ### (2021-05-26)
+> 
+> * bluez5: Use bluez5 recipe from poky master [Zahari Petkov]
+> 
+> ## meta-balena-2.79.5
+> ### (2021-05-21)
+> 
+> * README: Update supported Yocto versions [Alex Gonzalez]
+> 
+</details>
+
+* balena-connectcore: rename connectivity packagegroup [Mark Corbin]
+
 # v2.79.6+rev1
 ## (2021-06-08)
 

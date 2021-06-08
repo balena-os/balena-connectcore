@@ -1,4 +1,80 @@
 - commits:
+    - subject: Update meta-balena from v2.79.4 to v2.79.7
+      hash: 1c0abd5b7aa46f35d790873c95f253b805f3b73d
+      body: |
+        Update meta-balena from 2.79.4 to 2.79.7
+      footer:
+        Changelog-entry: Update meta-balena from v2.79.4 to v2.79.7
+        changelog-entry: Update meta-balena from v2.79.4 to v2.79.7
+        Signed-off-by: Mark Corbin <mark@balena.io>
+        signed-off-by: Mark Corbin <mark@balena.io>
+      author: Mark Corbin
+      nested:
+        - commits:
+            - subject: 'meta-balena: rename connectivity packagegroup'
+              hash: 8f54c4137f8bb8a83a05d9963cdb1565778c737b
+              body: |
+                Rename the resin-connectivity packagegroup.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: 'meta-balena: rename connectivity packagegroup'
+                changelog-entry: 'meta-balena: rename connectivity packagegroup'
+                Signed-off-by: Mark Corbin <mark@balena.io>
+                signed-off-by: Mark Corbin <mark@balena.io>
+              author: Mark Corbin
+              nested: []
+          version: meta-balena-2.79.7
+          date: 2021-05-26T15:03:08.108Z
+        - commits:
+            - subject: 'bluez5: Use bluez5 recipe from poky master'
+              hash: fe3c870eef75927eac740bbc1e8e15b8ed9c7341
+              body: |
+                This commit brings the bluez5 recipe from poky master as we need
+                to control which bluez5 version is used in meta-balena.
+
+                The code originates from poky's master branch -
+                c887238347295c87dacf8a08e6d703603436d0bc.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.79.6
+          date: 2021-05-26T08:26:16.310Z
+        - commits:
+            - subject: 'README: Update supported Yocto versions'
+              hash: cdbf76ccbaaf6e265f8432eca10d42e55b6969e8
+              body: >
+                Add the warrior and dunfell versions to the list of tested
+                releases.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.79.5
+          date: 2021-05-21T20:01:11.657Z
+    - subject: 'balena-connectcore: rename connectivity packagegroup'
+      hash: b276ca38727dc0ada28d00d6a4554f544ab35606
+      body: |
+        Rename the resin-connectivity packagegroup.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: 'balena-connectcore: rename connectivity packagegroup'
+        changelog-entry: 'balena-connectcore: rename connectivity packagegroup'
+        Signed-off-by: Mark Corbin <mark@balena.io>
+        signed-off-by: Mark Corbin <mark@balena.io>
+      author: Mark Corbin
+      nested: []
+  version: 2.79.7+rev1
+  date: 2021-06-08T10:49:57.338Z
+- commits:
     - subject: Update meta-balena from v2.79.4 to v2.79.6
       hash: ec4b04eb18e5aa2e68610a1da69df3990896e33c
       body: |
