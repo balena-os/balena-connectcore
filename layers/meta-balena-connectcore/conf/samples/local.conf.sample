@@ -5,7 +5,7 @@
 #TARGET_REPOSITORY ?= ""
 #TARGET_TAG ?= ""
 
-BALENA_STORAGE_ccimx8x_sbc_pro = "overlay2"
+BALENA_STORAGE_ccimx8x-sbc-pro = "overlay2"
 
 # Current (01/2021) module variants
 # 0x01: 1GB, 32bit
