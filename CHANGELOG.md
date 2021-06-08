@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v2.80.0+rev1
+## (2021-06-08)
+
+* Update meta-balena from v2.79.7 to v2.80.0 [Alex Gonzalez]
+
+<details>
+<summary> Update balena-yocto-scripts from 1.14.1 to 1.14.3 [Alex Gonzalez] </summary>
+
+> ## balena-yocto-scripts-1.14.3
+> ### (2021-06-01)
+> 
+> * balena-api: Filter out debug output [Alex Gonzalez]
+> * balena-api: Specify API environment and token when setting app roles [Alex Gonzalez]
+> * jenkins_build-blocks: Separate recipes and packages [Alex Gonzalez]
+> * balena-lib: Generalize contract fetcher [Alex Gonzalez]
+> * balena-deploy: Shorten installation directory '/yocto/resin-board' to '/work' [Alex Gonzalez]
+> * Conditional verbosity mode [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.14.2
+> ### (2021-05-26)
+> 
+> * balena-lib: Add function to fetch labels from image [Alex Gonzalez]
+> * balena-lib: contracts: Add package list fetcher [Alex Gonzalez]
+> * semver: Add bash utility for semantic version comparison [Alex Gonzalez]
+> * balena-docker: Add image retrieval function [Alex Gonzalez]
+> 
+</details>
+
+* Switch storage driver to overlay2 [Alex Gonzalez]
+
 # v2.79.7+rev1
 ## (2021-06-08)
 
