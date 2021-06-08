@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update meta-balena from v2.79.4 to v2.79.6
+      hash: ec4b04eb18e5aa2e68610a1da69df3990896e33c
+      body: |
+        Update meta-balena from 2.79.4 to 2.79.6.
+      footer:
+        Changelog-type: patch
+        changelog-type: patch
+        Changelog-entry: Update meta-balena from v2.79.4 to v2.79.6
+        changelog-entry: Update meta-balena from v2.79.4 to v2.79.6
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.79.6+rev1
+  date: 2021-06-08T09:53:54.125Z
+- commits:
     - subject: Add balena-yocto-scripts to upstream sources in repo.yml
       hash: ffa7cb0b86bd78bac288776d63a31555cb5d9ef4
       body: |
