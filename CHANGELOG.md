@@ -1,6 +1,33 @@
 Change log
 -----------
 
+# v2.80.1+rev2
+## (2021-09-24)
+
+
+<details>
+<summary> Update balena-yocto-scripts from v1.14.6 to v1.14.9 [Alex Gonzalez] </summary>
+
+> ## balena-yocto-scripts-1.14.9
+> ### (2021-08-20)
+> 
+> * balena-deploy: When deploying hostapp default to using slug as name [Alex Gonzalez]
+> * balena-api: Do not use balena_lib_resolve_aliases [Alex Gonzalez]
+> * balena_lib: Make resolve_aliases local so it is not globally used [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.14.8
+> ### (2021-07-22)
+> 
+> * Use slug when setting deviceType for leviathan [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.14.7
+> ### (2021-06-29)
+> 
+> * balena-lib: Fix print statements helper functions [Kyle Harding]
+> * balena-lib: Fix device dir when running in Jenkins containers [Kyle Harding]
+> 
+</details>
+
 # v2.80.1+rev1
 ## (2021-06-18)
 
