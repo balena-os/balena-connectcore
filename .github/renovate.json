@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>renovatebot/.github",
+    ":semanticCommitsDisabled"
+  ],
+  "semanticCommitScope": "deps",
+  "stabilityDays": 0,
+  "git-submodules": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": [".*meta-balena",".*balena-yocto-scripts"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["git-submodules"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "stabilityDays": 0
+    }
+  ]
+}
