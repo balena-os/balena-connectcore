@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update meta-balena from v2.80.1 to v2.85.10
+      hash: d17bd6b501a33991b4de13d2c7cf62dc7503d540
+      body: |
+        Update meta-balena from 2.80.1 to 2.85.10.
+      footer:
+        Changelog-type: patch
+        changelog-type: patch
+        Changelog-entry: Update meta-balena from v2.80.1 to v2.85.10
+        changelog-entry: Update meta-balena from v2.80.1 to v2.85.10
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.10+rev1
+  date: 2021-10-27T15:06:35.866Z
+- commits:
     - subject: Update balena-yocto-scripts from v1.14.6 to v1.14.9
       hash: 012235be1d2e30197340f4b7022bce4e25a37934
       body: |
