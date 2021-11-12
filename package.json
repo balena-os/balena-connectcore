@@ -1,0 +1,12 @@
+{
+  "name": "balena-versionist",
+  "version": "0.13.7",
+  "description": "",
+  "license": "ISC",
+  "devDependencies": {
+    "versionist": "^6.6.0",
+    "js-yaml": "^3.14.0",
+    "lodash": "^4.17.19",
+    "shelljs": "^0.8.4"
+  }
+}
