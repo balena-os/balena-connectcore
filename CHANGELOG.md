@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v2.85.11
+## (2021-11-12)
+
+* Add a basic contract [Alex Gonzalez]
+* Update meta-balena from v2.85.10 to v2.85.11 [Alex Gonzalez]
+* Add a local versionist.conf.js [Alex Gonzalez]
+
 # v2.85.10+rev1
 ## (2021-10-27)
 

@@ -1,4 +1,52 @@
 - commits:
+    - subject: Add a basic contract
+      hash: 0192e7e09821483b5a80e82d31fce34866c408a6
+      body: >
+        This will be used to set the deploy version for the fleets. Note that
+        the
+
+        contract version needs to match the meta-balena version and until
+        versionbot
+
+        is updated it needs to be manually updated with the meta-balena layer.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Add a basic contract
+        changelog-entry: Add a basic contract
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update meta-balena from v2.85.10 to v2.85.11
+      hash: b96f844ccac4503eced28b84bd1af6b9524fccde
+      body: |
+        Update meta-balena from 2.85.10 to 2.85.11.
+      footer:
+        Changelog-type: patch
+        changelog-type: patch
+        Changelog-entry: Update meta-balena from v2.85.10 to v2.85.11
+        changelog-entry: Update meta-balena from v2.85.10 to v2.85.11
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Add a local versionist.conf.js
+      hash: 9b6b6b7e4f49b83cd9276572679a9228b29848bc
+      body: |
+        This is a temporary way to test changes to versionist.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Add a local versionist.conf.js
+        changelog-entry: Add a local versionist.conf.js
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.11
+  date: 2021-11-12T19:59:33.258Z
+- commits:
     - subject: Update meta-balena from v2.80.1 to v2.85.10
       hash: d17bd6b501a33991b4de13d2c7cf62dc7503d540
       body: |
