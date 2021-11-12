@@ -1,5 +1,5 @@
 ---
-type: 'yocto-based OS image'
+type: 'temp-os-image'
 reviewers: 1
 upstream:
   - repo: 'meta-resin'
