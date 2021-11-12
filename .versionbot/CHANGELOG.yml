@@ -1,4 +1,50 @@
 - commits:
+    - subject: dependencies
+      hash: 4163f9f7aa6e8e0b11b15d1dd469f8e0b70ab25f
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: dependencies
+        changelog-entry: dependencies
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: versionist
+      hash: 236f6604a17defb2b962029908b1513d7787c4aa
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: versionist
+        changelog-entry: versionist
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Add a basic contract
+      hash: 12e70d746d8286132e4d51857403ddfc29030496
+      body: >
+        This will be used to set the deploy version for the fleets. Note that
+        the
+
+        contract version needs to match the meta-balena version and until
+        versionbot
+
+        is updated it needs to be manually updated with the meta-balena layer.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Add a basic contract
+        changelog-entry: Add a basic contract
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.10+rev2
+  date: 2021-11-12T18:46:11.338Z
+- commits:
     - subject: Update meta-balena from v2.80.1 to v2.85.10
       hash: d17bd6b501a33991b4de13d2c7cf62dc7503d540
       body: |
