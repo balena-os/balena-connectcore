@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.10+rev2
+## (2021-11-12)
+
+* Add a basic contract [Alex Gonzalez]
+
 # v2.85.10+rev1
 ## (2021-10-27)
 
