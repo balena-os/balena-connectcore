@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update meta-balena from v2.85.11 to v2.85.12
+      hash: 0c05cbeeb7df8a1b744ce451ae81cc1f67eaf3f2
+      body: |
+        Update meta-balena from 2.85.11 to 2.85.12.
+      footer:
+        Changelog-type: patch
+        changelog-type: patch
+        Changelog-entry: Update meta-balena from v2.85.11 to v2.85.12
+        changelog-entry: Update meta-balena from v2.85.11 to v2.85.12
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.12
+  date: 2021-11-15T20:01:49.393Z
+- commits:
     - subject: Update versionist
       hash: 44e5ad6d48cf2d5bae6ceee5f519f922d160e159
       body: ''
