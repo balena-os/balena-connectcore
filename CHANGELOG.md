@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.11+rev2
+## (2021-11-15)
+
+* Update versionist [Alex Gonzalez]
+
 # v2.85.11+rev1
 ## (2021-11-15)
 
