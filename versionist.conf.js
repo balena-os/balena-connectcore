@@ -7,6 +7,10 @@ const semver = require('balena-semver')
 const shell = require('shelljs')
 const yaml = require('js-yaml');
 
+const isESR = (version) => {
+  return /^\d{4}.(01|04|07|10).\d*$/.test(version)
+}
+
 const getMetaResinFromSubmodule = (documentedVersions, history, callback) => {
   // This is a hack because git does not update all the relevant files when moving a
   // submodule. Because of this, older repos will still have references to meta-resin
@@ -26,11 +30,16 @@ const getMetaResinFromSubmodule = (documentedVersions, history, callback) => {
 
     const metaVersion = `${match}+rev0`
     const latestDocumented = _.trim(_.last(documentedVersions.sort(semver.compare)))
+    let latestVersion
 
-    // semver.gt will ignore the revision numbers but still compare the version
-    // If metaVersion <= latestDocumented then the latestDocumented version is a revision of the current metaVersion
-    const latestVersion = semver.gt(metaVersion, latestDocumented) ? metaVersion : latestDocumented
-
+    if (latestDocumented.includes('rev')) {
+      // semver.gt will ignore the revision numbers but still compare the version
+      // If metaVersion <= latestDocumented then the latestDocumented version is a revision of the current metaVersion
+      latestVersion = semver.gt(metaVersion, latestDocumented) ? metaVersion : latestDocumented
+    } else {
+      // If latestDocumented does not contain revision, use it as latestVersion
+      latestVersion = `${latestDocumented}`
+    }
     return callback(null, latestVersion)
   })
 }
@@ -50,25 +59,22 @@ module.exports = {
     return 'patch'
   },
   incrementVersion: (currentVersion, incrementLevel) => {
+    if (isESR(currentVersion)) {
+      return semver.inc(currentVersion, 'patch')
+    }
     const parsedCurrentVersion = semver.parse(currentVersion)
-    console.log(parsedCurrentVersion)
     if ( parsedCurrentVersion.build && parsedCurrentVersion.build != '' ) {
       let revision = Number(String(parsedCurrentVersion.build).split('rev').pop())
       if (!_.isFinite(revision)) {
         throw new Error(`Could not extract revision number from ${currentVersion}`)
       }
       if (revision == 0) {
-        let version = parsedCurrentVersion.version + '+rev1'
-        console.log(`revision0: returning ${version}`)
-        return version
+        return `${parsedCurrentVersion.version}`
       } else {
-        let version =  parsedCurrentVersion.version + '+rev' + (revision + 1)
-        console.log(`revision != 0: returning ${version}`)
-        return version
+        return  `${parsedCurrentVersion.version}+rev${revision + 1}`
       }
     }
-    console.log(`Returning ${semver.inc(currentVersion)}`)
-    return semver.inc(currentVersion)
+    return `${parsedCurrentVersion.version}+rev1` 
   },
   updateContract: (cwd, version, callback) => {
       if (/^\d+\.\d+\.\d+$/.test(version) == false &&
