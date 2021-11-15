@@ -5,6 +5,7 @@ const fs = require('fs')
 const path = require('path')
 const semver = require('balena-semver')
 const shell = require('shelljs')
+const yaml = require('js-yaml');
 
 const getMetaResinFromSubmodule = (documentedVersions, history, callback) => {
   // This is a hack because git does not update all the relevant files when moving a
@@ -49,21 +50,27 @@ module.exports = {
     return 'patch'
   },
   incrementVersion: (currentVersion, incrementLevel) => {
-    console.error(`currentVersion ${currentVersion}`)
-    const revision = Number(currentVersion[currentVersion.length - 1])
-    if (!_.isFinite(revision)) {
-      throw new Error(`Could not extract revision number from ${currentVersion}`)
+    const parsedCurrentVersion = semver.parse(currentVersion)
+    console.log(parsedCurrentVersion)
+    if ( parsedCurrentVersion.build && parsedCurrentVersion.build != '' ) {
+      let revision = Number(String(parsedCurrentVersion.build).split('rev').pop())
+      if (!_.isFinite(revision)) {
+        throw new Error(`Could not extract revision number from ${currentVersion}`)
+      }
+      if (revision == 0) {
+        let version = parsedCurrentVersion.version + '+rev1'
+        console.log(`revision0: returning ${version}`)
+        return version
+      } else {
+        let version =  parsedCurrentVersion.version + '+rev' + (revision + 1)
+        console.log(`revision != 0: returning ${version}`)
+        return version
+      }
     }
-    if (revision == 0) {
-      console.error(`returning ${currentVersion.slice(0, currentVersion.length - 5)}`)
-      return currentVersion.slice(0, currentVersion.length - 5)
-    } else {
-      console.error(`returning ${currentVersion.slice(0, currentVersion.length - 1) + (revision + 1)}`)
-      return currentVersion.slice(0, currentVersion.length - 1) + (revision + 1)
-    }
+    console.log(`Returning ${semver.inc(currentVersion)}`)
+    return semver.inc(currentVersion)
   },
   updateContract: (cwd, version, callback) => {
-      console.error(`Updating contract to version ${version}`)
       if (/^\d+\.\d+\.\d+$/.test(version) == false &&
           /^\d+\.\d+\.\d+\+rev\d+$/.test(version) == false) {
         return callback(new Error(`Invalid version ${version}`));
@@ -74,7 +81,6 @@ module.exports = {
         return callback(null, version);
       }
 
-      const yaml = require('js-yaml');
       const content = yaml.load(fs.readFileSync(contract, 'utf8'));
       content.version = version;
       fs.writeFile(contract, yaml.dump(content), callback);
