@@ -1,4 +1,17 @@
 - commits:
+    - subject: update versionist to work with ESR
+      hash: 7a3cb70f8733e541a05520c425df9c3f0f01fef5
+      body: ''
+      footer:
+        Changelog-entry: update versionist to work with ESR
+        changelog-entry: update versionist to work with ESR
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.11+rev1
+  date: 2021-11-15T17:36:31.587Z
+- commits:
     - subject: Add a basic contract
       hash: 0192e7e09821483b5a80e82d31fce34866c408a6
       body: >

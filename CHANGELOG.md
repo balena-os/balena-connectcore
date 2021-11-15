@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.11+rev1
+## (2021-11-15)
+
+* update versionist to work with ESR [Alex Gonzalez]
+
 # v2.85.11
 ## (2021-11-12)
 
