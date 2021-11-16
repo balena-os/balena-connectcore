@@ -32,14 +32,10 @@ const getMetaResinFromSubmodule = (documentedVersions, history, callback) => {
       return callback(new Error(`Could not determine ${metaName} version from version ${stdout}`))
     }
 
-    let latestVersion
+    const latestDocumentedRevision = latestDocumented.includes('rev')? latestDocumented : `${semver.parse(latestDocumented).version}+rev0`
     // semver.gt will ignore the revision numbers but still compare the version
     // If metaVersion <= latestDocumented then the latestDocumented version is a revision of the current metaVersion
-    if (latestDocumented.includes('rev')) {
-      latestVersion = semver.gt(metaVersion, latestDocumented) ? `${metaVersion}` : latestDocumented
-    } else {
-      latestVersion = semver.gt(metaVersion, latestDocumented) ? `${metaVersion}` : `${semver.parse(latestDocumented).version}+rev0`
-    }
+    const latestVersion = semver.gt(metaVersion, latestDocumentedRevision) ? metaVersion : latestDocumentedRevision
     return callback(null, latestVersion)
   })
 }
