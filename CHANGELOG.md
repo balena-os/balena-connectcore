@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.14+rev1
+## (2021-11-16)
+
+* Add name to balena contract [Alex Gonzalez]
+
 # v2.85.14
 ## (2021-11-16)
 

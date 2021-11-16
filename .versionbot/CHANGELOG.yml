@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add name to balena contract
+      hash: aad935ccec86a509c5181015bd3a813a90bed93e
+      body: |
+        Use the hostapp name in the balena contract too.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Add name to balena contract
+        changelog-entry: Add name to balena contract
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.14+rev1
+  date: 2021-11-16T20:16:50.831Z
+- commits:
     - subject: Update meta-balena from v2.85.13 to v2.85.14
       hash: 73f17e72c8a01e41f323846d475907858bd4923e
       body: |
