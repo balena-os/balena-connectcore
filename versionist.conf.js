@@ -12,6 +12,11 @@ const isESR = (version) => {
 }
 
 const getMetaResinFromSubmodule = (documentedVersions, history, callback) => {
+  const latestDocumented = _.trim(_.last(documentedVersions.sort(semver.compare)))
+  // ESR releases do not update meta-balena versions
+  if (isESR(latestDocumented)) {
+    return callback(null, latestDocumented)
+  }
   // This is a hack because git does not update all the relevant files when moving a
   // submodule. Because of this, older repos will still have references to meta-resin
   // and new ones will refer to meta-balena
@@ -22,23 +27,18 @@ const getMetaResinFromSubmodule = (documentedVersions, history, callback) => {
     if (code != 0) {
       return callback(new Error(`Could not find ${metaName} submodule`))
     }
-    const match = stdout.replace(/\s/g,'').replace(/^v/g, '')
-
-    if (!match) {
+    const metaVersion = stdout.replace(/\s/g,'').replace(/^v/g, '')
+    if (!metaVersion) {
       return callback(new Error(`Could not determine ${metaName} version from version ${stdout}`))
     }
 
-    const metaVersion = `${match}+rev0`
-    const latestDocumented = _.trim(_.last(documentedVersions.sort(semver.compare)))
     let latestVersion
-
+    // semver.gt will ignore the revision numbers but still compare the version
+    // If metaVersion <= latestDocumented then the latestDocumented version is a revision of the current metaVersion
     if (latestDocumented.includes('rev')) {
-      // semver.gt will ignore the revision numbers but still compare the version
-      // If metaVersion <= latestDocumented then the latestDocumented version is a revision of the current metaVersion
-      latestVersion = semver.gt(metaVersion, latestDocumented) ? metaVersion : latestDocumented
+      latestVersion = semver.gt(metaVersion, latestDocumented) ? `${metaVersion}` : latestDocumented
     } else {
-      // If latestDocumented does not contain revision, use it as latestVersion
-      latestVersion = `${latestDocumented}`
+      latestVersion = semver.gt(metaVersion, latestDocumented) ? `${metaVersion}` : `${semver.parse(latestDocumented).version}+rev0`
     }
     return callback(null, latestVersion)
   })
@@ -68,13 +68,9 @@ module.exports = {
       if (!_.isFinite(revision)) {
         throw new Error(`Could not extract revision number from ${currentVersion}`)
       }
-      if (revision == 0) {
-        return `${parsedCurrentVersion.version}`
-      } else {
-        return  `${parsedCurrentVersion.version}+rev${revision + 1}`
-      }
+      return  `${parsedCurrentVersion.version}+rev${revision + 1}`
     }
-    return `${parsedCurrentVersion.version}+rev1` 
+    return `${parsedCurrentVersion.version}` 
   },
   updateContract: (cwd, version, callback) => {
       if (/^\d+\.\d+\.\d+$/.test(version) == false &&
