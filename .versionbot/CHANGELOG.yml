@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove device type name from contract
+      hash: 592ca434a12dc7c6c73968da15a15c720d5e9b5f
+      body: |
+        Device repositories typically build several devices types, so let's keep
+        this global contract generic.
+      footer:
+        Changelog-entry: Remove device type name from contract
+        changelog-entry: Remove device type name from contract
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev1
+  date: 2021-12-02T15:19:04.020Z
+- commits:
     - subject: Update meta-balena from v2.85.15 to v2.85.16
       hash: 9ce595715a8879994842d761b47190a1405e32d1
       body: |

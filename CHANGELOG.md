@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.16+rev1
+## (2021-12-02)
+
+* Remove device type name from contract [Alex Gonzalez]
+
 # v2.85.16
 ## (2021-12-02)
 
