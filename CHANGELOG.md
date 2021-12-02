@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.16
+## (2021-12-02)
+
+* Update meta-balena from v2.85.15 to v2.85.16 [Alex Gonzalez]
+
 # v2.85.15
 ## (2021-12-02)
 
