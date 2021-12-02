@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update readme as test
+      hash: 2ccbe62052ce7efaa75bf992b21466dc943fa809
+      body: |
+        Just a test
+      footer:
+        Changelog-entry: Update readme as test
+        changelog-entry: Update readme as test
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev2
+  date: 2021-12-02T15:47:38.503Z
+- commits:
     - subject: Remove device type name from contract
       hash: 592ca434a12dc7c6c73968da15a15c720d5e9b5f
       body: |
