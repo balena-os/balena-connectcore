@@ -8,7 +8,7 @@ const shell = require('shelljs')
 const yaml = require('js-yaml');
 
 const isESR = (version) => {
-  return /^\d{4}.(01|04|07|10).\d*$/.test(version)
+  return /^\d{4}\.(01|04|07|10)\.\d+$/.test(version)
 }
 
 const getMetaResinFromSubmodule = (documentedVersions, history, callback) => {
@@ -59,7 +59,7 @@ module.exports = {
       return semver.inc(currentVersion, 'patch')
     }
     const parsedCurrentVersion = semver.parse(currentVersion)
-    if ( parsedCurrentVersion.build && parsedCurrentVersion.build != '' ) {
+    if ( ! _.isEmpty(parsedCurrentVersion.build) ) {
       let revision = Number(String(parsedCurrentVersion.build).split('rev').pop())
       if (!_.isFinite(revision)) {
         throw new Error(`Could not extract revision number from ${currentVersion}`)
