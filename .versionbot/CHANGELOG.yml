@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update versionist
+      hash: f368392e2f76ba5f24e75b51e1976ce4be33ae4f
+      body: |
+        This will allow to test the balena-versionist changes before merging.
+      footer:
+        Changelog-entry: Update versionist
+        changelog-entry: Update versionist
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.14+rev2
+  date: 2021-12-01T13:14:20.392Z
+- commits:
     - subject: Add name to balena contract
       hash: aad935ccec86a509c5181015bd3a813a90bed93e
       body: |
