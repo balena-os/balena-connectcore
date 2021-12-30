@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove versionist and balena.yml
+      hash: 88d6af15d1ee67f13a4cc6fd412426feb07df4df
+      body: |
+        These were only used to test versioninst changes which are now in
+        production.
+      footer:
+        Changelog-entry: Remove versionist and balena.yml
+        changelog-entry: Remove versionist and balena.yml
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev2
+  date: 2021-12-30T16:09:31.037Z
+- commits:
     - subject: Remove device type name from contract
       hash: 592ca434a12dc7c6c73968da15a15c720d5e9b5f
       body: |

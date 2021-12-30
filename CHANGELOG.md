@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.16+rev2
+## (2021-12-30)
+
+* Remove versionist and balena.yml [Alex Gonzalez]
+
 # v2.85.16+rev1
 ## (2021-12-02)
 
