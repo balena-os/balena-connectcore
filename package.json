@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "js-yaml": "^3.14.0",
-    "lodash": "^4.17.19",
-    "balena-semver": "^2.3.0",
-    "shelljs": "^0.8.4"
-  }
-}
