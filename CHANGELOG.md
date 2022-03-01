@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.16+rev9
+## (2022-02-28)
+
+* Remove versionist package.json [Alex Gonzalez]
+
 # v2.85.16+rev8
 ## (2022-02-26)
 

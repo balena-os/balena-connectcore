@@ -1,4 +1,20 @@
 - commits:
+    - subject: Remove versionist package.json
+      hash: db2af415174f1f225af750a51dc562da6bde72b6
+      body: |
+        This is a leftover from 88d6af15d1ee67f13a4cc6fd412426feb07df4df where
+        the local test versionist files were removed.
+      footer:
+        Changelog-entry: Remove versionist package.json
+        changelog-entry: Remove versionist package.json
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev9
+  title: "'versionist: Remove package.json'"
+  date: 2022-02-28T18:33:21.628Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.17.2
       hash: 3ce4da7de22c633b07536ebcc3b1ee7746f2ed16
       body: |
