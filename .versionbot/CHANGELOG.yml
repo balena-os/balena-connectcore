@@ -1,4 +1,18 @@
 - commits:
+    - subject: Configure renovatebot for nested changelog support
+      hash: c5888e0940d9ef880f9aa08e5538e424aac27592
+      body: ""
+      footer:
+        Changelog-entry: Configure renovatebot for nested changelog support
+        changelog-entry: Configure renovatebot for nested changelog support
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev10
+  title: "'Add renovatebot configuration'"
+  date: 2022-03-03T12:26:44.159Z
+- commits:
     - subject: Remove versionist package.json
       hash: db2af415174f1f225af750a51dc562da6bde72b6
       body: |

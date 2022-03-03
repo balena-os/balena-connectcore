@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.16+rev10
+## (2022-03-03)
+
+* Configure renovatebot for nested changelog support [Alex Gonzalez]
+
 # v2.85.16+rev9
 ## (2022-02-28)
 
