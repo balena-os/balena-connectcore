@@ -6,6 +6,10 @@
   ],
   "semanticCommitScope": "deps",
   "stabilityDays": 0,
+  "commitMessagePrefix": "Update",
+  "commitMessageAction": "",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
   "git-submodules": {
     "enabled": true
   },
