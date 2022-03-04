@@ -1,4 +1,22 @@
 - commits:
+    - subject: Disable renovate automerge
+      hash: 95ce6762e76d16d2b81b8b9ff1218505d90a987b
+      body: |
+        It is likely that as compulsory reviews are enforced we will also need
+        to install `renovate-approve` / `renovate-approve-2` for automerging to
+        work.
+
+        Let's disable it to test the rest of the functionality.
+      footer:
+        Changelog-entry: Disable renovate automerge
+        changelog-entry: Disable renovate automerge
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev11
+  date: 2022-03-04T15:09:42.566Z
+- commits:
     - subject: Configure renovatebot for nested changelog support
       hash: c5888e0940d9ef880f9aa08e5538e424aac27592
       body: ""
