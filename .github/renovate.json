@@ -22,7 +22,6 @@
     {
       "matchManagers": ["git-submodules"],
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true,
       "stabilityDays": 0
     }
   ]
