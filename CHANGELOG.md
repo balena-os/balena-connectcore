@@ -1,6 +1,14 @@
 Change log
 -----------
 
+# v2.85.16+rev11
+## (2022-03-04)
+
+* Remove configuration to force onboarding [Alex Gonzalez]
+* Update renovate configuration [Alex Gonzalez]
+* Unconfigure renovate [Alex Gonzalez]
+* Disable renovate automerge [Alex Gonzalez]
+
 # v2.85.16+rev10
 ## (2022-03-03)
 
