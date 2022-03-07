@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.85.16+rev12
+## (2022-03-07)
+
+* Trigger renovate onboarding [Alex Gonzalez]
+
 # v2.85.16+rev11
 ## (2022-03-07)
 
