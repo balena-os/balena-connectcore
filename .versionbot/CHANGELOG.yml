@@ -1,4 +1,28 @@
 - commits:
+    - subject: Configure renovate
+      hash: 4525d151605790296743e5400b119468a91eab51
+      body: |
+        This triggers a configuration event.
+      footer:
+        Changelog-entry: Configure renovate
+        changelog-entry: Configure renovate
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Trigger renovate onboarding
+      hash: 56ac28fe250d22e1d5fc4f40b79e420177be4f81
+      body: ""
+      footer:
+        Changelog-entry: Trigger renovate onboarding
+        changelog-entry: Trigger renovate onboarding
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev12
+  date: 2022-03-07T19:30:15.167Z
+- commits:
     - subject: Add renovate-config submodule
       hash: 9414f938f9008733eb5c5292b894046038c8061f
       body: |
