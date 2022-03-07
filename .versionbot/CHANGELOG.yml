@@ -1,4 +1,90 @@
 - commits:
+    - subject: Add renovate-config submodule
+      hash: 9414f938f9008733eb5c5292b894046038c8061f
+      body: |
+        This contains a renovate configuration file that configures the update
+        of the submodule dependencies.
+      footer:
+        Changelog-entry: Add renovate-config submodule
+        changelog-entry: Add renovate-config submodule
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Remove renovate configuration
+      hash: 87d004b2ad8e0e253568e9f5e312ea8f56d65418
+      body: |
+        This will trigger a new onboarding.
+      footer:
+        Changelog-entry: Remove renovate configuration
+        changelog-entry: Remove renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Add renovate configuration
+      hash: be48aa69a06e9b346d4c15e65d9fdb457dbb5267
+      body: |
+        It's verified with:
+           renovate-config-validator renovate.json
+      footer:
+        Changelog-entry: Add renovate configuration
+        changelog-entry: Add renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Remove configuration to force onboarding
+      hash: a78498353735f9d036429373cba1f2670bc859b6
+      body: ""
+      footer:
+        Changelog-entry: Remove configuration to force onboarding
+        changelog-entry: Remove configuration to force onboarding
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update renovate configuration
+      hash: 2dceb8984d8d0293f08dcc362144b4ab9d66d98f
+      body: ""
+      footer:
+        Changelog-entry: Update renovate configuration
+        changelog-entry: Update renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Unconfigure renovate
+      hash: b56b08ae87582aec0b764a6819c4c1f277978fd3
+      body: |
+        It seems that removing the configuration is the way for the bot to
+        reconfigure (given that we don't receive onboarding PRs)
+      footer:
+        Changelog-entry: Unconfigure renovate
+        changelog-entry: Unconfigure renovate
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Disable renovate automerge
+      hash: 95ce6762e76d16d2b81b8b9ff1218505d90a987b
+      body: |
+        It is likely that as compulsory reviews are enforced we will also need
+        to install `renovate-approve` / `renovate-approve-2` for automerging to
+        work.
+
+        Let's disable it to test the rest of the functionality.
+      footer:
+        Changelog-entry: Disable renovate automerge
+        changelog-entry: Disable renovate automerge
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev11
+  title: "'Add renovate-config submodule'"
+  date: 2022-03-07T18:39:04.364Z
+- commits:
     - subject: Configure renovatebot for nested changelog support
       hash: c5888e0940d9ef880f9aa08e5538e424aac27592
       body: ""
