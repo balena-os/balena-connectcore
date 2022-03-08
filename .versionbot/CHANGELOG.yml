@@ -1,4 +1,76 @@
 - commits:
+    - subject: Reset renovate configuration
+      hash: c0416f8e6450b22e9ae9a704ca19043175a09af0
+      body: >
+        The renovate git-submodules package only supports digest updates at the
+
+        moment, no tags. See https://github.com/renovatebot/renovate/issues/14349
+      footer:
+        Changelog-entry: Reset renovate configuration
+        changelog-entry: Reset renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Add renovate.json configuration
+      hash: 6d27894c62252100daa034807fdd8b72350c23e5
+      body: |
+        This is version controller in `balena-os/renovate-config.git`, please
+        do not modify this file in individual device repositories.
+      footer:
+        Changelog-entry: Add renovate.json configuration
+        changelog-entry: Add renovate.json configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Add renovate-config in .github directory
+      hash: d56700e4d072fdbcf1d3e3da75dc455bf449a124
+      body: |
+        This allows to keep renovate-config as a submodule.
+      footer:
+        Changelog-entry: Add renovate-config in .github directory
+        changelog-entry: Add renovate-config in .github directory
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Remove renovate.json symlinks and submodule
+      hash: abbdf880dcf10861e2543b4461a679a90c8c35c6
+      body: |
+        The renovate.json file cannot be a symlink
+      footer:
+        Changelog-entry: Remove renovate.json symlinks and submodule
+        changelog-entry: Remove renovate.json symlinks and submodule
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Configure renovate
+      hash: 4525d151605790296743e5400b119468a91eab51
+      body: |
+        This triggers a configuration event.
+      footer:
+        Changelog-entry: Configure renovate
+        changelog-entry: Configure renovate
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Trigger renovate onboarding
+      hash: 56ac28fe250d22e1d5fc4f40b79e420177be4f81
+      body: ""
+      footer:
+        Changelog-entry: Trigger renovate onboarding
+        changelog-entry: Trigger renovate onboarding
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.85.16+rev12
+  title: "'Reset renovate configuration'"
+  date: 2022-03-08T11:36:34.172Z
+- commits:
     - subject: Add renovate-config submodule
       hash: 9414f938f9008733eb5c5292b894046038c8061f
       body: |
