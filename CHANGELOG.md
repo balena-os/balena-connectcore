@@ -1,6 +1,17 @@
 Change log
 -----------
 
+# v2.95.5
+## (2022-03-23)
+
+* Remove renovate configuration [Alex Gonzalez]
+* Update layers/meta-balena to cd458f0596359c8df6d7ebf643772b418d3193d4 [Renovate Bot]
+* Update balena-yocto-scripts to d1b829beda3e07098e964b071c08849e1cfcb4d2 [Renovate Bot]
+* Update balena-yocto-scripts to a038ecce793495cbab26693a4e3ee31255e80390 [Renovate Bot]
+* Add renovate configuration [Alex Gonzalez]
+* Remove renovate configuration [Alex Gonzalez]
+* Configure renovate to use digests [Alex Gonzalez]
+
 # v2.85.16+rev12
 ## (2022-03-08)
 

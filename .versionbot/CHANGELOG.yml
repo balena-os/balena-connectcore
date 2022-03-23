@@ -1,4 +1,73 @@
 - commits:
+    - subject: Remove renovate configuration
+      hash: 52f7eaba343ed44cc1c537fe7e1b0a311d4610c8
+      body: ""
+      footer:
+        Changelog-entry: Remove renovate configuration
+        changelog-entry: Remove renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update layers/meta-balena to cd458f0596359c8df6d7ebf643772b418d3193d4
+      hash: f98ac6eff0b9e0d70deadd8eaccfa85ca6477ff8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to cd458f0596359c8df6d7ebf643772b418d3193d4
+        changelog-entry: Update layers/meta-balena to cd458f0596359c8df6d7ebf643772b418d3193d4
+      author: Renovate Bot
+      nested: []
+    - subject: Update balena-yocto-scripts to d1b829beda3e07098e964b071c08849e1cfcb4d2
+      hash: 5e23517aa826f851849c7365f83f4028d3b73559
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to d1b829beda3e07098e964b071c08849e1cfcb4d2
+        changelog-entry: Update balena-yocto-scripts to d1b829beda3e07098e964b071c08849e1cfcb4d2
+      author: Renovate Bot
+      nested: []
+    - subject: Update balena-yocto-scripts to a038ecce793495cbab26693a4e3ee31255e80390
+      hash: be6c3cfaf7d83901648a9d7e4f66e35ccdb6f06c
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to a038ecce793495cbab26693a4e3ee31255e80390
+        changelog-entry: Update balena-yocto-scripts to a038ecce793495cbab26693a4e3ee31255e80390
+      author: Renovate Bot
+      nested: []
+    - subject: Add renovate configuration
+      hash: 10b9086ad4feab1cdddd9bf97fe2dcda23cdf95d
+      body: ""
+      footer:
+        Changelog-entry: Add renovate configuration
+        changelog-entry: Add renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Remove renovate configuration
+      hash: a8d0b6140a3982fd46e71967fcf0b6d81e4d9465
+      body: |
+        We will keep the configuration on a central repository instead.
+      footer:
+        Changelog-entry: Remove renovate configuration
+        changelog-entry: Remove renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Configure renovate to use digests
+      hash: 2fa52c0bb83dcaa110e220ecc65d4a7f73c411fa
+      body: ""
+      footer:
+        Changelog-entry: Configure renovate to use digests
+        changelog-entry: Configure renovate to use digests
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.95.5
+  title: "'Reset renovate configuration'"
+  date: 2022-03-23T11:06:39.358Z
+- commits:
     - subject: Reset renovate configuration
       hash: c0416f8e6450b22e9ae9a704ca19043175a09af0
       body: >
