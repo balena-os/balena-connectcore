@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.95.5+rev1
+## (2022-03-23)
+
+* Add renovate configuration [Alex Gonzalez]
+
 # v2.95.5
 ## (2022-03-23)
 
