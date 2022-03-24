@@ -1,4 +1,35 @@
 - commits:
+    - subject: remove renovate configuration
+      hash: e3f2b66c6501e14fae74a89316ea9d4bb1c536b1
+      body: |
+        When I re-add it, renovate will reconfigure.
+      footer:
+        Changelog-entry: remove renovate configuration
+        changelog-entry: remove renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update layers/meta-balena to e475c4342068121c3e55762906dca3578030834a
+      hash: 170c554c354eff76f4eb9f8c4f71e78b6b3ddef6
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to e475c4342068121c3e55762906dca3578030834a
+        changelog-entry: Update layers/meta-balena to e475c4342068121c3e55762906dca3578030834a
+      author: Renovate Bot
+      nested: []
+    - subject: Update layers/meta-balena to b02393458d4f9fd04dc7a0a3c7a6ecdf257da480
+      hash: e83ade54a67de87bb78f707c698fec24de2ba50a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b02393458d4f9fd04dc7a0a3c7a6ecdf257da480
+        changelog-entry: Update layers/meta-balena to b02393458d4f9fd04dc7a0a3c7a6ecdf257da480
+      author: Renovate Bot
+      nested: []
+  version: 2.95.7
+  title: "'renovate: Remove configuration'"
+  date: 2022-03-24T10:41:35.252Z
+- commits:
     - subject: Add renovate configuration
       hash: da9df870319c0c476349cb751af7f8babcb17e23
       body: ""

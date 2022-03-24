@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v2.95.7
+## (2022-03-24)
+
+* remove renovate configuration [Alex Gonzalez]
+* Update layers/meta-balena to e475c4342068121c3e55762906dca3578030834a [Renovate Bot]
+* Update layers/meta-balena to b02393458d4f9fd04dc7a0a3c7a6ecdf257da480 [Renovate Bot]
+
 # v2.95.5+rev1
 ## (2022-03-23)
 
