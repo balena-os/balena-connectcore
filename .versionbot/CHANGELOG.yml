@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add renovate configuration
+      hash: 8a000ec026880ae55928b37684ca302a2e49b24b
+      body: |
+        This will trigger a re-configuration of renovate.
+      footer:
+        Changelog-entry: Add renovate configuration
+        changelog-entry: Add renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.95.7+rev1
+  title: "'renovate: add configuration'"
+  date: 2022-03-24T12:00:23.341Z
+- commits:
     - subject: remove renovate configuration
       hash: e3f2b66c6501e14fae74a89316ea9d4bb1c536b1
       body: |
