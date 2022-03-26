@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update layers/meta-balena to 133b50d2cea10dfb921b96be4ae35ae73d32a937
+      hash: bec45a8b613a46d507d3b2057b45cc39c4fc7b9b
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 133b50d2cea10dfb921b96be4ae35ae73d32a937
+        changelog-entry: Update layers/meta-balena to 133b50d2cea10dfb921b96be4ae35ae73d32a937
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "resindataexpander: Check and fix end GPT if necessary"
+              hash: 5d2435e17851f44f17cfba491b01f766d7930317
+              body: >
+                Under certain circumstances that we haven't reproduced,
+
+                it is reported that the alternate GPT may become corrupt,
+
+                preventing the device from booting.
+
+
+                Should this happen, we use sgdisk to check and recover the end gpt
+
+                from the main one.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.95.8
+          title: "'Add gpt check'"
+          date: 2022-03-25T08:08:23.471Z
+  version: 2.95.8
+  title: "'Update layers/meta-balena digest to 133b50d'"
+  date: 2022-03-26T19:45:49.698Z
+- commits:
     - subject: Update balena-yocto-scripts to e5f42e16c47836391389c7b928a002efa6001a1e
       hash: bcb01cb4f75273737485d4f877f4fdcb7cc46f7f
       body: Update balena-yocto-scripts

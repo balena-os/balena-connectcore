@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.95.8
+## (2022-03-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 133b50d2cea10dfb921b96be4ae35ae73d32a937 [Renovate Bot] </summary>
+
+> ## meta-balena-2.95.8
+> ### (2022-03-25)
+> 
+> * resindataexpander: Check and fix end GPT if necessary [Alexandru Costache]
+> 
+</details>
+
 # v2.95.7+rev2
 ## (2022-03-26)
 
