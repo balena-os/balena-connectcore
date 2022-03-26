@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.95.7+rev2
+## (2022-03-26)
+
+
+<details>
+<summary> Update balena-yocto-scripts to e5f42e16c47836391389c7b928a002efa6001a1e [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.17.9
+> ### (2022-03-25)
+> 
+> * automation: ami: make BALENA_PRELOAD_COMMIT optional [Joseph Kogut]
+> 
+</details>
+
 # v2.95.7+rev1
 ## (2022-03-24)
 
