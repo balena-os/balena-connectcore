@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 22a8e417d9857359b669b15398dc171f447af089
+      hash: b6b8963032e29d8610cc60773a14488db38fd4d5
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 22a8e417d9857359b669b15398dc171f447af089
+        changelog-entry: Update balena-yocto-scripts to 22a8e417d9857359b669b15398dc171f447af089
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Pass environment to docker
+              hash: ac8be68fb073aed53b21b2e66df4fb54adb64e22
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+          version: balena-yocto-scripts-1.17.10
+          title: "'Pass environment to docker'"
+          date: 2022-03-28T17:26:04.107Z
+  version: 2.95.8+rev1
+  title: "'Update balena-yocto-scripts digest to 22a8e41'"
+  date: 2022-03-28T19:51:48.514Z
+- commits:
     - subject: Update layers/meta-balena to 133b50d2cea10dfb921b96be4ae35ae73d32a937
       hash: bec45a8b613a46d507d3b2057b45cc39c4fc7b9b
       body: Update layers/meta-balena

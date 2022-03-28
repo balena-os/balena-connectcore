@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.95.8+rev1
+## (2022-03-28)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 22a8e417d9857359b669b15398dc171f447af089 [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.17.10
+> ### (2022-03-28)
+> 
+> * Pass environment to docker [ab77]
+> 
+</details>
+
 # v2.95.8
 ## (2022-03-26)
 
