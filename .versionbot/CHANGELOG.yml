@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 5a4768b15ee9a5b5490607b1db2b0b605eb7b400
+      hash: 93077a4388590a41932daf94d3949ff2a6fe3a53
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 5a4768b15ee9a5b5490607b1db2b0b605eb7b400
+        changelog-entry: Update balena-yocto-scripts to 5a4768b15ee9a5b5490607b1db2b0b605eb7b400
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Unattended preload operation
+              hash: 1fecbb4d000b1a403f192a63d5e2921ded56647c
+              body: >
+                * the CLI prompts for input during preload
+
+
+                Alternatively, the --pin-device-to-release flag may be used to pin only the
+
+                preloaded device to the selected release.
+
+
+                Would you like to disable automatic updates for this fleet now? No
+
+
+                * we do not want to set the suggested flag and we do not want to touch the fleet release policy for this use case
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+          version: balena-yocto-scripts-1.17.11
+          title: "'Unattended preload operation'"
+          date: 2022-03-29T14:36:18.054Z
+  version: 2.95.9+rev1
+  title: "'Update balena-yocto-scripts digest to 5a4768b'"
+  date: 2022-03-29T16:00:11.469Z
+- commits:
     - subject: Update layers/meta-balena to 0639c82c402b22d3397beb22b88bb97f15597ceb
       hash: aa161a1a9a96555ef3009bff6330147c8d6a6590
       body: Update layers/meta-balena

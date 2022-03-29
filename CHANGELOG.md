@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.95.9+rev1
+## (2022-03-29)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 5a4768b15ee9a5b5490607b1db2b0b605eb7b400 [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.17.11
+> ### (2022-03-29)
+> 
+> * Unattended preload operation [ab77]
+> 
+</details>
+
 # v2.95.9
 ## (2022-03-28)
 
