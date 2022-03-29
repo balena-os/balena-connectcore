@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 190305d322be4db65c03640eacf5ed21928dcbf9
+      hash: 643d85e5c719b62e82273bdeed485045976e80ee
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 190305d322be4db65c03640eacf5ed21928dcbf9
+        changelog-entry: Update balena-yocto-scripts to 190305d322be4db65c03640eacf5ed21928dcbf9
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove superfluous preload flag
+              hash: a124b525ca058ead27eb43c0a799eb692c79fa80
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: ab77
+              nested: []
+          version: balena-yocto-scripts-1.17.12
+          title: "'Remove superfluous preload flag'"
+          date: 2022-03-29T17:38:21.495Z
+  version: 2.95.9+rev3
+  title: "'Update balena-yocto-scripts digest to 190305d'"
+  date: 2022-03-29T21:11:08.090Z
+- commits:
     - subject: Update balena-yocto-scripts to b9612227c8f902819c4162e962a6de09e02cb4be
       hash: d4ecb026f0dd33d5680747d1562f84f25b70da67
       body: Update balena-yocto-scripts

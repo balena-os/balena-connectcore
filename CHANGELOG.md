@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.95.9+rev3
+## (2022-03-29)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 190305d322be4db65c03640eacf5ed21928dcbf9 [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.17.12
+> ### (2022-03-29)
+> 
+> * Remove superfluous preload flag [ab77]
+> 
+</details>
+
 # v2.95.9+rev2
 ## (2022-03-29)
 
