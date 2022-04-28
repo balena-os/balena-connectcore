@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update layers/meta-balena to 87fb338552e3cfdfcb3500ed65940be897b99bbc
+      hash: 6966b359e4d76dc87ba5b0b4f839358c458862c1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 87fb338552e3cfdfcb3500ed65940be897b99bbc
+        changelog-entry: Update layers/meta-balena to 87fb338552e3cfdfcb3500ed65940be897b99bbc
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests/cloud: fix ssh test for testbot workers"
+              hash: 4d44bb297e015bfaef140d8c92d14de0e412be47
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.98.8
+          title: "'tests/cloud: fix ssh test for testbot workers'"
+          date: 2022-04-28T09:09:48.983Z
+        - commits:
+            - subject: "linux-firmware: package QuZ-a0-jf-b0 separately"
+              hash: 20695e32e0e8b3d60267090530b3cd41a3450d56
+              body: |
+                This is used by Intel Wireless-AC 9462
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.98.7
+          title: "'linux-firmware: package QuZ-a0-jf-b0 separately'"
+          date: 2022-04-27T09:22:39.188Z
+  version: 2.98.8
+  title: "'Update layers/meta-balena digest to 87fb338'"
+  date: 2022-04-28T11:55:28.834Z
+- commits:
     - subject: Update layers/meta-balena to 798e236d25380d70e7be09d8d5dbb0349c05f413
       hash: db7db203ce98a53c040e840fd12cdb3d7a39c5e3
       body: Update layers/meta-balena

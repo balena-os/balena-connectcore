@@ -1,6 +1,25 @@
 Change log
 -----------
 
+# v2.98.8
+## (2022-04-28)
+
+
+<details>
+<summary> Update layers/meta-balena to 87fb338552e3cfdfcb3500ed65940be897b99bbc [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.8
+> ### (2022-04-28)
+> 
+> * tests/cloud: fix ssh test for testbot workers [rcooke-warwick]
+> 
+> ## meta-balena-2.98.7
+> ### (2022-04-27)
+> 
+> * linux-firmware: package QuZ-a0-jf-b0 separately [Michal Toman]
+> 
+</details>
+
 # v2.98.6
 ## (2022-04-27)
 
