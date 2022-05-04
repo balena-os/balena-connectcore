@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 9685efd5bf2ae5b12d307b2f879c51bd6dbab82e
+      hash: f3d25667062707bdfe6000ff9ef77c782d981c5f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 9685efd5bf2ae5b12d307b2f879c51bd6dbab82e
+        changelog-entry: Update layers/meta-balena to 9685efd5bf2ae5b12d307b2f879c51bd6dbab82e
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Rename renovate config
+              hash: 11070330e7ef2a22e38fe341c4098df478300127
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.98.15
+          title: "'Rename renovate config to json'"
+          date: 2022-05-04T17:13:58.711Z
+  version: 2.98.15
+  title: "'Update layers/meta-balena digest to 9685efd'"
+  date: 2022-05-04T22:38:24.808Z
+- commits:
     - subject: Update layers/meta-balena to 2e10b2d1990f200f5854b2317a71c2272e755df1
       hash: a46e4b8adc34ef54869f3f96644d137940619d62
       body: Update layers/meta-balena
