@@ -1,0 +1,44 @@
+name: Deploy on master merge
+
+on:
+  pull_request:
+    branches: [ master ]
+    types: [closed]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  jobs:
+    fetch:
+      runs-on: ubuntu-latest
+
+      outputs:
+        boards: ${{ steps.getBoards.all }}
+      steps:
+        - name: Checkout board repository
+          uses: actions/checkout@v3
+        - name: 'Fetch latest tag'
+          id: get-latest-tag
+          uses: "actions-ecosystem/action-get-latest-tag@v1"
+          if: ${{ steps.release-label.outputs.level != null }}
+        - name: 'Fetch all boards'
+          id: list-boards
+          run: |
+            echo "::set-output name=boards::$(find -maxdepth 1 -name \"*coffee\" -exec basename {} \; | cut -d '.' -f1)"
+
+    deploy:
+      loopcheck:
+        strategy:
+          matrix:
+            boards: [ ${{  steps.list-boards.outputs.boards }} ]
+      - name: Triggers a deploy job
+        run: |
+          echo "Deploying" ${{ matrix.boards}}
+        uses: Gympass/jenkins-job-action@0.0.5
+        with:
+          jenkins_url: "https://jenkins.product-os.io"
+          jenkins_user: "alexg@balena.io" # Replace for automation account
+          jenkins_token: "${{ secrets.jenkins_token }}" # Use a Github secret, for security purposes.
+          job_name: "balenaOS-deploy" # Deploys all boards in repository
+          jenkins_params: '{"board": "${{ matrix.boards }}", "tag": "${{  steps.get-latest-tag.outputs.tag }}", "deployTo": "staging", "final": "no"}'
+
