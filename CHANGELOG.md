@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.29+rev2
+## (2022-05-26)
+
+* Update contracts to f251e053b36b3a6d14cd022b9745e478dcad9a6a [Renovate Bot]
+
 # v2.98.29+rev1
 ## (2022-05-24)
 
