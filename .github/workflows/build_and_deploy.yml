@@ -61,7 +61,7 @@ jobs:
           jenkins_url: "https://jenkins.product-os.io"
           jenkins_user: "${{ secrets.jenkins_user }}"
           jenkins_token: "${{ secrets.jenkins_token }}"
-          jenkin_use_post_request: 'True'
+          jenkins_use_post_request: 'True'
           job_name: "balenaOS-deploy"
           job_timeout: 14400
           jenkins_params: '{"board": "${{ matrix.board }}", "tag": "${{  needs.fetch.outputs.tag }}", "deployTo": "staging", "final": "no"}'
