@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix a typo in a github deploy action
+      hash: 99bdd400614e4e12ff8e716f7d5f72fcd95eb047
+      body: ""
+      footer:
+        Changelog-entry: Fix a typo in a github deploy action
+        changelog-entry: Fix a typo in a github deploy action
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.29+rev3
+  date: 2022-05-26T16:43:22.956Z
+- commits:
     - subject: Update contracts to f251e053b36b3a6d14cd022b9745e478dcad9a6a
       hash: bf1b20ec3cd66d75259a51fa6b6e3c05a4ee41e9
       body: Update contracts

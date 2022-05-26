@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.29+rev3
+## (2022-05-26)
+
+* Fix a typo in a github deploy action [Alex Gonzalez]
+
 # v2.98.29+rev2
 ## (2022-05-26)
 
