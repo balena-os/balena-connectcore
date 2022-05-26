@@ -1,4 +1,38 @@
 - commits:
+    - subject: Filter on tags on build and deploy workflow
+      hash: 5239fd2ee2a90de4f390410bb3850a200d23e59a
+      body: |
+        Only deploy when a tag for either a rolling or ESR release is created
+        by versionbot.
+      footer:
+        Changelog-entry: Filter on tags on build and deploy workflow
+        changelog-entry: Filter on tags on build and deploy workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67
+      hash: a02ee286179241bc6d7969fc0598360b35381b43
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67
+        changelog-entry: Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67
+      author: Renovate Bot
+      nested: []
+    - subject: Fix a typo in a github deploy action
+      hash: 99bdd400614e4e12ff8e716f7d5f72fcd95eb047
+      body: ""
+      footer:
+        Changelog-entry: Fix a typo in a github deploy action
+        changelog-entry: Fix a typo in a github deploy action
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.30
+  title: "'workflows: build_and_deploy: Filter on tags'"
+  date: 2022-05-26T20:33:35.312Z
+- commits:
     - subject: Update contracts to f251e053b36b3a6d14cd022b9745e478dcad9a6a
       hash: bf1b20ec3cd66d75259a51fa6b6e3c05a4ee41e9
       body: Update contracts

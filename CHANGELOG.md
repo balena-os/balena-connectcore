@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v2.98.30
+## (2022-05-26)
+
+* Filter on tags on build and deploy workflow [Alex Gonzalez]
+* Update layers/meta-balena to 55903947dc4dbbf7a0a1c5626ba6c8eaa1b09f67 [Renovate Bot]
+* Fix a typo in a github deploy action [Alex Gonzalez]
+
 # v2.98.29+rev2
 ## (2022-05-26)
 
