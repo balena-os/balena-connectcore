@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use reusable workflow
+      hash: 9c3fbd0dbd211629d138e4617be2ca370c52e7a0
+      body: ""
+      footer:
+        Changelog-entry: Use reusable workflow
+        changelog-entry: Use reusable workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.31+rev5
+  title: "'workflows: build_and_deploy: Use reusable workflow'"
+  date: 2022-05-27T15:20:00.052Z
+- commits:
     - subject: Only run deploy workflow on device repositories
       hash: 2530bb5263e7db96c85a895df2e6008c30489145
       body: ""

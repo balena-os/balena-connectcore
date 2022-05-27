@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.31+rev5
+## (2022-05-27)
+
+* Use reusable workflow [Alex Gonzalez]
+
 # v2.98.31+rev4
 ## (2022-05-27)
 
