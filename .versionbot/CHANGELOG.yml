@@ -1,4 +1,19 @@
 - commits:
+    - subject: Rename deploy workflow
+      hash: 9e745ae394ddfc9c59d2dc41294b239d62230f04
+      body: |
+        Tags can happen on any branch, not just on master, for example for ESR.
+      footer:
+        Changelog-entry: Rename deploy workflow
+        changelog-entry: Rename deploy workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.31+rev3
+  title: "'workflow: build and deploy: Change name to deploy on release tag'"
+  date: 2022-05-27T10:41:20.373Z
+- commits:
     - subject: Rename workflow
       hash: c4dfca7542d0db996607fb34d6e68b133e90dae7
       body: |
