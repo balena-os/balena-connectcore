@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.31+rev2
+## (2022-05-27)
+
+* Rename workflow [Alex Gonzalez]
+
 # v2.98.31+rev1
 ## (2022-05-27)
 

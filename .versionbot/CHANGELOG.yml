@@ -1,4 +1,19 @@
 - commits:
+    - subject: Rename workflow
+      hash: c4dfca7542d0db996607fb34d6e68b133e90dae7
+      body: |
+        The workflow is now deploying on master release tag and not PR merge.
+      footer:
+        Changelog-entry: Rename workflow
+        changelog-entry: Rename workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.31+rev2
+  title: "'workflows: build_and_deploy: Rename to match the action'"
+  date: 2022-05-27T09:53:59.248Z
+- commits:
     - subject: Update local tags
       hash: a6bb733a91d5f3b7508b0c72abd7f29445743379
       body: |
