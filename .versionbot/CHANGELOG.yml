@@ -1,4 +1,18 @@
 - commits:
+    - subject: Only run deploy workflow on device repositories
+      hash: 2530bb5263e7db96c85a895df2e6008c30489145
+      body: ""
+      footer:
+        Changelog-entry: Only run deploy workflow on device repositories
+        changelog-entry: Only run deploy workflow on device repositories
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.31+rev4
+  title: "'workflows: build_and_deploy: Only run on device repositories'"
+  date: 2022-05-27T13:05:48.982Z
+- commits:
     - subject: Rename deploy workflow
       hash: 9e745ae394ddfc9c59d2dc41294b239d62230f04
       body: |
