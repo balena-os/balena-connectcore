@@ -6,79 +6,10 @@ on:
       - v[0-9]+.[0-9]+.[0-9]+\+?r?e?v?[0-9]?
       - v20[0-9][0-9].[0-1]?[1470].[0-9]+
 
-    # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    outputs:
-      tag: ${{ steps.set-tag.outputs.tag }}
-      boards: ${{ steps.list-boards.outputs.boards }}
-      status: ${{ join(steps.*.conclusion) }}
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: 'Only run for device repositories'
-        id: assert-device-repository
-        run: |
-          if [ -f "$(pwd)/repo.yml" ]; then
-            if grep -q "yocto-based OS image" repo.yml; then
-              exit 0
-            fi
-          fi
-          exit 1
-
-      - name: 'Update local tags'
-        id: update-tags
-        run: git fetch --tags -f
-
-      - name: 'Fetch latest tag'
-        id: get-latest-tag
-        uses: "actions-ecosystem/action-get-latest-tag@v1"
-
-      - name: 'Set tag'
-        id: set-tag
-        run: echo "::set-output name=tag::${{ steps.get-latest-tag.outputs.tag }}"
-
-      - name: 'Fetch all boards'
-        id: list-boards
-        if: ${{ steps.get-latest-tag.outputs.tag != null }}
-        run: |
-          sudo apt update
-          sudo apt install moreutils
-          git submodule update --init -- balena-yocto-scripts
-          $(pwd)/balena-yocto-scripts/build/build-device-type-json.sh || (echo "Could not generate .json file(s)." && exit 1)
-          tmpfile=$(mktemp)
-          cat << 'EOF' > "${tmpfile}"
-          { "include": [] }
-          EOF
-          board_list=$(find . -maxdepth 1 -type f -name "*json" -exec jq -r '.yocto.machine' {} \;)
-          for board in ${board_list}; do
-            jq -c --arg board "${board}" '.include[.include | length] |= . + {"board": $board}' "${tmpfile}" | sponge "${tmpfile}"
-          done
-          echo "::set-output name=boards::$(cat ${tmpfile})"
-          rm "${tmpfile}"
-
-  deploy:
-    needs: fetch
-    if: contains(needs.fetch.outputs.status, 'success')
-    runs-on: ubuntu-latest
-    strategy:
-      matrix: ${{fromJson(needs.fetch.outputs.boards)}}
-    steps:
-      - name: Debug
-        if: ${{ matrix.board  != null }}
-        run: |
-          echo "Deploying" ${{ matrix.board }}
-      - name: Triggers a deploy job
-        if: ${{ matrix.board  != null }}
-        uses: alexgg/jenkins-job-action@0.0.9
-        with:
-          jenkins_url: "https://jenkins.product-os.io"
-          jenkins_user: "${{ secrets.jenkins_user }}"
-          jenkins_token: "${{ secrets.jenkins_token }}"
-          jenkins_use_post_request: 'True'
-          job_name: "balenaOS-deploy"
-          job_timeout: 14400
-          jenkins_params: '{"board": "${{ matrix.board }}", "tag": "${{  needs.fetch.outputs.tag }}", "deployTo": "staging", "final": "no"}'
+  release-on-tag:
+    uses: balena-os/github-workflows/.github/workflows/build_and_deploy.yml@v0.0.3
+    secrets: inherit
