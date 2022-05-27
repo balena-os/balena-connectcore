@@ -19,6 +19,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: 'Only run for device repositories'
+        id: assert-device-repository
+        run: |
+          if [ -f "$(pwd)/repo.yml" ]; then
+            if grep -q "yocto-based OS image" repo.yml; then
+              exit 0
+            fi
+          fi
+          exit 1
+
       - name: 'Update local tags'
         id: update-tags
         run: git fetch --tags -f
