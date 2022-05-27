@@ -1,4 +1,20 @@
 - commits:
+    - subject: Parametrize environment and final inputs
+      hash: 6a4cd88ce7d8a762a66a06b4eee5e22ee5d60c26
+      body: |
+        Allow to specify what environment to deploy to and whether to finalize
+        the release.
+      footer:
+        Changelog-entry: Parametrize environment and final inputs
+        changelog-entry: Parametrize environment and final inputs
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.31+rev7
+  title: "'workflows: build and deploy: Parametrize environment and final inputs'"
+  date: 2022-05-27T18:02:09.998Z
+- commits:
     - subject: Update contracts to 35dea15031cf273d469171f81ed24c394332caf5
       hash: 0242dad9926dd1c0462b86337b568f55e0ab5774
       body: Update contracts

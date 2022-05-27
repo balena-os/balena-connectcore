@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.98.31+rev7
+## (2022-05-27)
+
+* Parametrize environment and final inputs [Alex Gonzalez]
+
 # v2.98.31+rev6
 ## (2022-05-27)
 
