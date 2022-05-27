@@ -1,4 +1,4 @@
-name: 'Deploy on master release tag'
+name: 'Deploy on release tag'
 
 on:
   push:
