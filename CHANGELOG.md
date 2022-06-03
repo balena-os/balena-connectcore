@@ -1,6 +1,33 @@
 Change log
 -----------
 
+# v2.98.35
+## (2022-06-02)
+
+
+<details>
+<summary> Update layers/meta-balena to ff147b2a19933df0c16fb37cb7bb294e77caa985 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.35
+> ### (2022-06-02)
+> 
+> * tests: os: udev: improve formatting [Joseph Kogut]
+> * tests: os: udev: use systemd.waitForServiceState [Joseph Kogut]
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 5bd9f32d3ac9eb7eafb6eca9dd7ccc700fdacea3 [Renovate Bot] </summary>
+
+> ## meta-balena-2.98.35
+> ### (2022-06-02)
+> 
+> * tests: os: udev: improve formatting [Joseph Kogut]
+> * tests: os: udev: use systemd.waitForServiceState [Joseph Kogut]
+> 
+</details>
+
 # v2.98.33+rev1
 ## (2022-06-01)
 
