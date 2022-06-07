@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to 3a62a83ec12b05377b46d46bee9661b8b6b4a090
+      hash: 7b959d2434233e7071180a31af6ab681e2e35058
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3a62a83ec12b05377b46d46bee9661b8b6b4a090
+        changelog-entry: Update layers/meta-balena to 3a62a83ec12b05377b46d46bee9661b8b6b4a090
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests:cloud: Register teardown only when DUT is reachable"
+              hash: fd822dabb42b2a45b1e77f262159bee192022d80
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.98.42
+          title: "'tests:cloud: Register teardown only when DUT is reachable'"
+          date: 2022-06-05T21:57:22.077Z
+    - subject: Update layers/meta-balena to dafd28999c58f4b4ae7e6fb28a4923e0b65d4a54
+      hash: 09929618b98336181063f4d05690c4e469261d4f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to dafd28999c58f4b4ae7e6fb28a4923e0b65d4a54
+        changelog-entry: Update layers/meta-balena to dafd28999c58f4b4ae7e6fb28a4923e0b65d4a54
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests:cloud: Register teardown only when DUT is reachable"
+              hash: fd822dabb42b2a45b1e77f262159bee192022d80
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.98.42
+          title: "'tests:cloud: Register teardown only when DUT is reachable'"
+          date: 2022-06-05T21:57:22.077Z
+  version: 2.98.42
+  title: "'Update layers/meta-balena digest to 3a62a83'"
+  date: 2022-06-07T17:17:02.194Z
+- commits:
     - subject: Update contracts to 58bcfbc0b0237177c51db2d7120e61d70e9c415b
       hash: 11a0ec77c8d2235d4853132fe6b5de4a3ceb5f9a
       body: Update contracts
