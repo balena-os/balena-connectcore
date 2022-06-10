@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v2.99.0
+## (2022-06-10)
+
+
+<details>
+<summary> Update layers/meta-balena to 202e9c71433434b1f2bd5e658c7f7f216a364ad5 [Renovate Bot] </summary>
+
+> ## meta-balena-2.99.0
+> ### (2022-06-10)
+> 
+> * chronyd: Add time synchronization healthcheck [Alex Gonzalez]
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 466c0e3a56da6605f033d8fd1b37c301c96af979 [Renovate Bot] </summary>
+
+> ## meta-balena-2.99.0
+> ### (2022-06-10)
+> 
+> * chronyd: Add time synchronization healthcheck [Alex Gonzalez]
+> 
+</details>
+
 # v2.98.43
 ## (2022-06-09)
 
