@@ -14,9 +14,9 @@ postProvisioningInstructions = [
 
 module.exports =
 	version: 1
-	slug: 'ccimx8x-sbc-pro'
-	aliases: [ 'ccimx8x-sbc-pro' ]
-	name: 'ConnectCore 8X SBC Pro'
+	slug: 'test-private'
+	aliases: [ 'test-private' ]
+	name: 'Test device type'
 	arch: 'aarch64'
 	state: 'new'
 	community: true
