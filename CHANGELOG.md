@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v2.99.26+rev3
+## (2022-07-28)
+
+* Update build and deploy workflow to v0.0.9 [Alex Gonzalez]
+* Update balena-yocto-scripts to 09e4514953fed499a69c224b47969fd2c3fb7ab8 [renovate[bot]]
+* Update contracts to 9db49d2fbb34542f53bf496135c32cccf5df487c [renovate[bot]]
+
 # v2.99.26+rev2
 ## (2022-07-17)
 

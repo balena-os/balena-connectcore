@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update build and deploy workflow to v0.0.9
+      hash: 7502bd401b9c79ae5dec4c501118d907e99d4def
+      body: |
+        This update will deploy as final when automation tests have been passed
+        for the previous merge commit.
+      footer:
+        Changelog-entry: Update build and deploy workflow to v0.0.9
+        changelog-entry: Update build and deploy workflow to v0.0.9
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update balena-yocto-scripts to 09e4514953fed499a69c224b47969fd2c3fb7ab8
+      hash: 86588037dca2ef4c5a28735363d0ece98c848cd7
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 09e4514953fed499a69c224b47969fd2c3fb7ab8
+        changelog-entry: Update balena-yocto-scripts to 09e4514953fed499a69c224b47969fd2c3fb7ab8
+      author: renovate[bot]
+      nested: []
+    - subject: Update contracts to 9db49d2fbb34542f53bf496135c32cccf5df487c
+      hash: c3adaa81321cd4a3405788855d919231d86f15be
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 9db49d2fbb34542f53bf496135c32cccf5df487c
+        changelog-entry: Update contracts to 9db49d2fbb34542f53bf496135c32cccf5df487c
+      author: renovate[bot]
+      nested: []
+  version: 2.99.26+rev3
+  title: "'build_and_deploy: update to v0.0.9'"
+  date: 2022-07-28T16:57:35.197Z
+- commits:
     - subject: Update contracts to 4df6bf241e40b34e4d7051c97ba4f9cf1945c45f
       hash: ec8fd04626e36eb48b99cea9fc2b368e95f3fd5e
       body: Update contracts
