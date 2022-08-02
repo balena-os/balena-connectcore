@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.99.26+rev4
+## (2022-08-01)
+
+* Remove final argument from build and deploy workflow [Alex Gonzalez]
+
 # v2.99.26+rev3
 ## (2022-07-28)
 
