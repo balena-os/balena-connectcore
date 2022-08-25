@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to 094cc1766365844e9e4dcf46f4f247cad0231715
+      hash: 24c321f504e3cac37cfbf7a371c316eaaaa1d3ff
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 094cc1766365844e9e4dcf46f4f247cad0231715
+        changelog-entry: Update layers/meta-balena to 094cc1766365844e9e4dcf46f4f247cad0231715
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "renovate: Fix nested changelogs and change-type for SV updates"
+              hash: 516432877cf9fda8b65cae1b3cddcd8bd8cc249d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.101.11
+          title: "'renovate: Fix nested changelogs and change-type for SV updates'"
+          date: 2022-08-24T12:22:37.592Z
+    - subject: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+      hash: 66a1367f1f75d1df25c804e03f057a45f2f7a335
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+        changelog-entry: Update layers/meta-balena to a1084cfc437eb601cbb9f3de7822d916e08351de
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "renovate: Fix nested changelogs and change-type for SV updates"
+              hash: 516432877cf9fda8b65cae1b3cddcd8bd8cc249d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.101.11
+          title: "'renovate: Fix nested changelogs and change-type for SV updates'"
+          date: 2022-08-24T12:22:37.592Z
+  version: 2.101.11
+  title: "'Update layers/meta-balena digest to 094cc17'"
+  date: 2022-08-25T05:43:34.931Z
+- commits:
     - subject: Update layers/meta-balena to f2de8e3d438671ac740bfa2119ab881afc5d2101
       hash: 3b3636a2a92f6944042eea2c13aa44bf3e032758
       body: Update layers/meta-balena
