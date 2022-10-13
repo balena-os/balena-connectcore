@@ -1,4 +1,20 @@
 - commits:
+    - subject: Update build and deploy workflow to v0.0.12
+      hash: 09804c0ea4248222a6a7b53caea464626588ce04
+      body: |
+        This update identifies test job names with the default prefix `test`
+        instead of a hardcoded `testbot-`.
+      footer:
+        Changelog-entry: Update build and deploy workflow to v0.0.12
+        changelog-entry: Update build and deploy workflow to v0.0.12
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.105.9+rev1
+  title: "'build_and_deploy: update to v0.0.12'"
+  date: 2022-10-13T16:53:51.718Z
+- commits:
     - subject: Update layers/meta-balena to cf01401eff54d9fd3a4fd1247f4d3f059619c2d3
       hash: f8d6f6d23f8e33b453a891630bc6f13ba9b840a9
       body: Update layers/meta-balena
