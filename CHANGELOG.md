@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.105.9+rev2
+## (2022-10-15)
+
+* use organizational secrets for flowzone [Alex Gonzalez]
+
 # v2.105.9+rev1
 ## (2022-10-13)
 

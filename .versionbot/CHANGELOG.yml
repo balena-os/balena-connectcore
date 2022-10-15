@@ -1,4 +1,18 @@
 - commits:
+    - subject: use organizational secrets for flowzone
+      hash: 4de28137a0617ca66c1ff58f20cf616f6b9a6886
+      body: ""
+      footer:
+        Changelog-entry: use organizational secrets for flowzone
+        changelog-entry: use organizational secrets for flowzone
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.105.9+rev2
+  title: ""
+  date: 2022-10-15T02:58:02.693Z
+- commits:
     - subject: Switch from balenaCI to flowzone
       hash: 31ececdcbe2e6dc39636ca5e8138c5ede8c93948
       body: ""
