@@ -1,0 +1,12 @@
+name: ESR
+
+on:
+  # Run at 00:00 on the second day every 3rd month (quarterly)
+  schedule:
+    - cron: "0 0 2 */3 *"
+
+jobs:
+  esr:
+    name: Create ESR branch and tag
+    uses: balena-os/github-workflows/.github/workflows/esr.yml@master
+    secrets: inherit
