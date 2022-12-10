@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update layers/meta-balena to 5cb3c1438d6959dc31e77851fb070143ef1a82a6
+      hash: c31cf5cb65682c25af912db7ff3b19730b9bffcc
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5cb3c1438d6959dc31e77851fb070143ef1a82a6
+        changelog-entry: Update layers/meta-balena to 5cb3c1438d6959dc31e77851fb070143ef1a82a6
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.6
+              hash: 70a888685d33267af60e53ac70a6169b744416bd
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.107.24
+          title: ""
+          date: 2022-12-09T20:45:04.709Z
+  version: 2.107.24
+  title: ""
+  date: 2022-12-10T00:18:41.663Z
+- commits:
     - subject: Update contracts to 7038b0ce71daa96a832540d24fcad5bc5142ff13
       hash: 17063e5bb7c59985e125984de7bc385dbc551f0c
       body: Update contracts
