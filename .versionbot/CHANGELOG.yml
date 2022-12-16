@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update layers/meta-balena to fb94465957a60691b15731b39b6b22ad616a62d4
+      hash: c91dd1f95c2d504b3760fd6b0efbd4395489e073
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to fb94465957a60691b15731b39b6b22ad616a62d4
+        changelog-entry: Update layers/meta-balena to fb94465957a60691b15731b39b6b22ad616a62d4
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.8
+              hash: c17d172ab71504dc15cd9f25f5837000c15d86f9
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.107.38
+          title: ""
+          date: 2022-12-16T02:18:49.848Z
+        - commits:
+            - subject: "tests: cloud: simplify apps to speedup suite"
+              hash: 9552f6ba4961e032fb3bd086548eec06b650609a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.107.37
+          title: ""
+          date: 2022-12-15T14:05:57.987Z
+  version: 2.107.38
+  title: ""
+  date: 2022-12-16T06:09:27.820Z
+- commits:
     - subject: Update contracts to 08f029b5c82e71b9b25fbeef4805815bfa4c24aa
       hash: 093edb33bd2ac17f22ec8d8bd8c6fe1d3fbb031a
       body: Update contracts
