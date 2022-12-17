@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update contracts to b6bdc537c9f9d224301152a0291682172320bf6a
+      hash: 6fa17fd46817b84f2574325f60f33a5e6cb34c3d
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b6bdc537c9f9d224301152a0291682172320bf6a
+        changelog-entry: Update contracts to b6bdc537c9f9d224301152a0291682172320bf6a
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "Flowzone: Allow external contributions"
+              hash: bb2226cc9e36d056d33c70cb3926ce58b9e47e28
+              body: |
+                Update the flowzone workflow to allow external PRs from forks
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.34
+          title: ""
+          date: 2022-12-16T15:12:18.550Z
+        - commits:
+            - subject: "Flowzone: Use inherited secrets"
+              hash: 8d5f9d9f28de663b32b58999f076dd7932dbaa3b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.33
+          title: ""
+          date: 2022-12-16T14:46:36.924Z
+  version: 2.107.40+rev1
+  title: ""
+  date: 2022-12-17T00:11:49.508Z
+- commits:
     - subject: Update layers/meta-balena to 6e039cdc2a8f60d117853db48327c166a0826518
       hash: bcfe6bcdd89fb8838b6bd28947643b2082f7063f
       body: Update layers/meta-balena
