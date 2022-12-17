@@ -1,4 +1,60 @@
 - commits:
+    - subject: Update layers/meta-balena to 1b3b0a273b8aeb2ac69805253657c7ec2ec670b4
+      hash: f8acbccf3c7b20947dce4fa5c737ec8d28b86238
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1b3b0a273b8aeb2ac69805253657c7ec2ec670b4
+        changelog-entry: Update layers/meta-balena to 1b3b0a273b8aeb2ac69805253657c7ec2ec670b4
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update NetworkManager to 1.40.4
+              hash: aeab6a6b030bd6d0047a92dcc8d41fd9e542ffe7
+              body: >
+                Main NetworkManager recipe was migrated to match latest one from
+
+                meta-openembedded, so that all improvements are merged now.
+
+
+                Excluded from it are `iwd` and `dhcpcd` daemon configurations that are
+
+                not used by us.
+
+
+                Default NM firewall in meta-openembedded is `nftables` where we are still
+
+                using `iptables`.
+
+
+                The new recipe relies on `meson` as a build system now.
+
+
+                The .bbapend file that contains modifications specific to balena is preserved.
+
+                Only `balena-client-id.patch` is removed as it references code that no longer
+
+                exists. This is because the internal systemd DHCPv4 client code that NM used
+
+                is now replaced by nettools' n-dhcp4 implementation.
+
+
+                Closes #2872
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update NetworkManager to 1.40.4
+                changelog-entry: Update NetworkManager to 1.40.4
+                Signed-off-by: Zahari Petkov <zahari@balena.io>
+                signed-off-by: Zahari Petkov <zahari@balena.io>
+              author: Zahari Petkov
+              nested: []
+          version: meta-balena-2.108.0
+          title: ""
+          date: 2022-12-16T21:10:35.840Z
+  version: 2.108.0
+  title: ""
+  date: 2022-12-17T04:12:22.791Z
+- commits:
     - subject: Update contracts to b6bdc537c9f9d224301152a0291682172320bf6a
       hash: 6fa17fd46817b84f2574325f60f33a5e6cb34c3d
       body: Update contracts
