@@ -1,4 +1,19 @@
 - commits:
+    - subject: add ESR workflow
+      hash: eb311f947843f215cb69842ef4b32335d000ffdd
+      body: |
+        This workflow will run every quarter and create the ESR branch and tags.
+      footer:
+        Changelog-entry: add ESR workflow
+        changelog-entry: add ESR workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.108.9+rev1
+  title: ""
+  date: 2022-12-29T15:08:52.008Z
+- commits:
     - subject: Update layers/meta-balena to 95d8b0c5bfb36a164081f417b52c8de16f2dc474
       hash: 9569bcbb4cb332b59b5d21caf09016cca2d0a23d
       body: Update layers/meta-balena
