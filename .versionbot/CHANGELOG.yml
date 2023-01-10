@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update layers/meta-balena to 707ed18ca071fb7d7d557e0774f9f479323892af
+      hash: d6041e62f6bdb008b50a47471ba29be9f4712a07
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 707ed18ca071fb7d7d557e0774f9f479323892af
+        changelog-entry: Update layers/meta-balena to 707ed18ca071fb7d7d557e0774f9f479323892af
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "redsocks: Increase maximum number of open files"
+              hash: e90b9159ed5f0dac3d9fe1b1b486201ee85f1161
+              body: >
+                This increases the number of open connections that redsocks can support
+
+                to a new maximum of 2048.
+
+
+                See https://github.com/darkk/redsocks/blob/19b822e345f6a291f6cff6b168f1cfdfeeb2cd7d/base.c#L419
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.108.19
+          title: ""
+          date: 2023-01-10T18:47:46.842Z
+  version: 2.108.19
+  title: ""
+  date: 2023-01-10T20:08:05.215Z
+- commits:
     - subject: Allow to run ESR workflow from actions tab
       hash: 72f91517d1da047d5bc018e7a62d8c3eda226db2
       body: ""
