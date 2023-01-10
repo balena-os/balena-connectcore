@@ -1,4 +1,18 @@
 - commits:
+    - subject: Allow to run ESR workflow from actions tab
+      hash: 72f91517d1da047d5bc018e7a62d8c3eda226db2
+      body: ""
+      footer:
+        Changelog-entry: Allow to run ESR workflow from actions tab
+        changelog-entry: Allow to run ESR workflow from actions tab
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.108.18+rev1
+  title: ""
+  date: 2023-01-10T15:02:33.093Z
+- commits:
     - subject: Update layers/meta-balena to 7b8d9a8b591487aefcdcd522d385ec14abaa1be6
       hash: ddfc890ba0f8baa69f790fb08780e9896d11e057
       body: Update layers/meta-balena

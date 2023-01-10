@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.108.18+rev1
+## (2023-01-10)
+
+* Allow to run ESR workflow from actions tab [Alex Gonzalez]
+
 # v2.108.18
 ## (2023-01-10)
 
