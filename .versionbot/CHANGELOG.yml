@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update contracts to 40d6eaa3f0455babd1abcc1d11a6e6db60387797
+      hash: 16eb8b1812f279291c3b5546e849eaaff8b2f688
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 40d6eaa3f0455babd1abcc1d11a6e6db60387797
+        changelog-entry: Update contracts to 40d6eaa3f0455babd1abcc1d11a6e6db60387797
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "node: do not set unsafe-perm with npm 9 and newer"
+              hash: c1950ce76e44b48196c44874e09c8857651bddd8
+              body: >
+                The unsafe-perm config option has been dropped in npm 9, trying to set it
+
+                ends with an error and therefore fails the build. With this patch
+
+                the build script parses the major version from `npm --version` and only
+
+                sets unsafe-perm on npm 8 and older.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+          version: contracts-2.0.51
+          title: ""
+          date: 2023-02-24T21:25:17.414Z
+  version: 2.112.14+rev2
+  title: ""
+  date: 2023-03-15T21:58:54.236Z
+- commits:
     - subject: update README build methods
       hash: cbf51ecb6da4f5b600a6390e588cf861d7ee0e06
       body: ""
