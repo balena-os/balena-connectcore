@@ -1,4 +1,41 @@
 - commits:
+    - subject: update README build methods
+      hash: cbf51ecb6da4f5b600a6390e588cf861d7ee0e06
+      body: ""
+      footer:
+        Changelog-entry: update README build methods
+        changelog-entry: update README build methods
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: trigger deploy builds on multi-digit revisions too
+      hash: 8eae830e50a064c8c2440bc937c048fbfa3a4251
+      body: >
+        According to github action syntax [1], there is no special character
+
+        to denote a match on zero or more of the preceding character, so
+
+        replace `[0-9]?` which only matches zero or one of the preceding
+
+        characters with a `*`.
+
+
+        [1] https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+
+
+        [skip ci]
+      footer:
+        Changelog-entry: trigger deploy builds on multi-digit revisions too
+        changelog-entry: trigger deploy builds on multi-digit revisions too
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.112.14+rev1
+  title: ""
+  date: 2023-03-15T12:01:49.552Z
+- commits:
     - subject: Update layers/meta-balena to 80ca81f9e4ec9d4b2e4d21bc1cf12bd59220be5a
       hash: a75539ca270251fe5b1ab0a666ec633474698b2b
       body: Update layers/meta-balena
