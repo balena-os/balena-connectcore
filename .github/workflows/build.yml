@@ -1,0 +1,83 @@
+name: 'Build balenaOS'
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        type: string
+        default: 'balena-staging.com'
+      organization:
+        required: true
+        type: string
+      board:
+        required: false
+        type: string
+      balenaos-version:
+        required: true
+        type: string
+        default: 'master'
+
+jobs:
+  all:
+    runs-on: self-hosted
+    steps:
+      - name: Clone device repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ github.token }}
+          submodules: true
+          ref: ${{ inputs.balenaos-version }}
+
+      - name: 'Device repository check'
+        run: |
+          if [ -f "$(pwd)/src/repo.yml" ]; then
+            if grep -q "yocto-based OS image" $(pwd)/src/repo.yml; then
+              exit 0
+            fi
+          fi
+          exit 1
+
+      - name: Build
+        id: build
+        run: |
+          $(pwd)/src/balena-yocto-scripts/build/balena-build.sh -d ${{ inputs.board }} -t ${{ secrets.BALENA_TOKEN }} -s ${{ github.workspace }}
+          manifest="balena-image-${{ inputs.board }}.manifest"
+          if [ -f "${pwd}/src/build/tmp/deploy/images/${{ inputs.board }}/${manifest}" ]; then
+            KERNEL_VERSION=$(awk '{ for (i=1;i<=NF;i++) if($i=="kernel")  print $3}'  ${manifest} | cut -d "+" -f1)
+            echo "::set-output name=kernel-version::$KERNEL_VERSION"
+          fi
+
+      - name: 'Prepare deployment'
+        id: prepare
+        run: |
+          workdir="$(pwd)/deploy/contents"
+          mkdir -p ${workdir}
+          tar xf ${{ steps.build.outputs.targz }} --directory "${workdir}"
+          sed -i "s/%KERNEL_VERSION%/${{ steps.build.outputs.kernel-version }}/g" balena.yml
+
+      - name: Deploy to balena environment
+        id: deploy-to-balena
+        uses: alexgg/balena-deploy-action@v1
+        with:
+          token: ${{ secrets.BALENA_TOKEN }}
+          fleet: ${{ inputs.board }}
+          organization: ${{ inputs.organization }}
+          environment: ${{ inputs.environment }}
+          type: ${{ inputs.board }}
+          contents: ${{ github.workspace }}/deploy
+
+      - name: Log release ID
+        run: echo "Deployed release ${{ steps.deploy.outputs.release-id }}"
+
+      - name: Deploy to  S3
+        id: deploy-to-s3
+        uses: alexgg/balena-s3-deploy@v1
+        with:
+          aws_bucket: ${{ inputs.bucket }}
+          aws_path: images/${{ inputs.board }}/${{ inputs.balenaos-version}}
+          source_path: "deploy/contents"
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
+          aws_policy: "public-read"
+
