@@ -2,8 +2,10 @@ name: ESR
 
 on:
   # Run at 00:00 on the second day every 3rd month (quarterly)
+  # Run weekly too to keep the workflow enabled
   schedule:
     - cron: "0 0 2 */3 *"
+    - cron: "6 0 * * 1"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,6 +21,10 @@ on:
 
 jobs:
   esr:
-    name: Create ESR branch and tag
-    uses: balena-os/github-workflows/.github/workflows/esr.yml@master
-    secrets: inherit
+    - name: Exit on weekly runs
+      if: github.event.schedule != '0 0 2 */3 *'
+      run: exit 1
+
+    - name: Create ESR branch and tag
+      uses: balena-os/github-workflows/.github/workflows/esr.yml@master
+      secrets: inherit
