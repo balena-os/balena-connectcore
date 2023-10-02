@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add weekly keep alive for flowzone ESR workflow
+      hash: 7b2c2ca8db3345c20c0f8d9926b9acb3b30a18e6
+      body: ""
+      footer:
+        Changelog-entry: Add weekly keep alive for flowzone ESR workflow
+        changelog-entry: Add weekly keep alive for flowzone ESR workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 4.0.16+rev4
+  title: ""
+  date: 2023-10-02T14:31:16.488Z
+- commits:
     - subject: Update contracts to d68265ebeac98e7814829da7e7f6bb2a9aff8e39
       hash: f443455ca6c91d47f918b7002f02285f34adad52
       body: Update contracts

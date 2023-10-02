@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v4.0.16+rev4
+## (2023-10-02)
+
+* Add weekly keep alive for flowzone ESR workflow [Alex Gonzalez]
+
 # v4.0.16+rev3
 ## (2023-10-02)
 
