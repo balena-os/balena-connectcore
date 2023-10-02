@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v4.0.16+rev5
+## (2023-10-02)
+
+* Add missing runs-on to ESR workflow [Alex Gonzalez]
+
 # v4.0.16+rev4
 ## (2023-10-02)
 

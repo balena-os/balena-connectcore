@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add missing runs-on to ESR workflow
+      hash: caee8a7a0691b5a82e2e3a230a8e6f301cde902c
+      body: ""
+      footer:
+        Changelog-entry: Add missing runs-on to ESR workflow
+        changelog-entry: Add missing runs-on to ESR workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 4.0.16+rev5
+  title: ""
+  date: 2023-10-02T19:33:10.239Z
+- commits:
     - subject: Add weekly keep alive for flowzone ESR workflow
       hash: 7b2c2ca8db3345c20c0f8d9926b9acb3b30a18e6
       body: ""
