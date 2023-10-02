@@ -21,10 +21,12 @@ on:
 
 jobs:
   esr:
-    - name: Exit on weekly runs
-      if: github.event.schedule != '0 0 2 */3 *'
-      run: exit 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exit on weekly runs
+        if: github.event.schedule != '0 0 2 */3 *'
+        run: exit 1
 
-    - name: Create ESR branch and tag
-      uses: balena-os/github-workflows/.github/workflows/esr.yml@master
-      secrets: inherit
+      - name: Create ESR branch and tag
+        uses: balena-os/github-workflows/.github/workflows/esr.yml@master
+        secrets: inherit
