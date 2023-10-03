@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+      hash: 8aa82efee1610da1366e7645dd3f5c03c9d3f9d3
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+        changelog-entry: Update balena-os/github-workflows to
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.16+rev6
+  title: ""
+  date: 2023-10-03T00:42:19.066Z
+- commits:
     - subject: Add missing runs-on to ESR workflow
       hash: caee8a7a0691b5a82e2e3a230a8e6f301cde902c
       body: ""
