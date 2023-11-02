@@ -1,6 +1,36 @@
 Change log
 -----------
 
+# v4.0.16+rev9
+## (2023-11-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 39430b27390c28c4b055fb8711005600112a6951 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.39
+> ### (2023-10-20)
+> 
+> * Dockerfile_yocto-build-env: Install rsync and uudecode host dependencies [Alexandru Costache]
+> 
+> ## balena-yocto-scripts-1.19.38
+> ### (2023-10-11)
+> 
+> * README.md ChangeType is needed for PR so add to README example [Alex J Lennon]
+> 
+> ## balena-yocto-scripts-1.19.37
+> ### (2023-10-10)
+> 
+> * Dockerfile_yocto-build-env: Add screen [Alex J Lennon]
+> 
+> ## balena-yocto-scripts-1.19.36
+> ### (2023-10-10)
+> 
+> * flowzone: allow external contributions [Alex Gonzalez]
+> 
+
+</details>
+
 # v4.0.16+rev8
 ## (2023-11-02)
 

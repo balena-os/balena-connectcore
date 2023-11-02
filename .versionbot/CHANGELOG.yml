@@ -1,4 +1,75 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 39430b27390c28c4b055fb8711005600112a6951
+      hash: 3fd57620252f021c28f25ffc02df940e0175df03
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 39430b27390c28c4b055fb8711005600112a6951
+        changelog-entry: Update balena-yocto-scripts to 39430b27390c28c4b055fb8711005600112a6951
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "Dockerfile_yocto-build-env: Install rsync and uudecode host
+                dependencies"
+              hash: 20a981f81a47cf86c62efb57838baa4d45776560
+              body: |
+                These are required for the UCM-iMX9 build
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexnadru Costache <alexandru@balena.io>
+                signed-off-by: Alexnadru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: balena-yocto-scripts-1.19.39
+          title: ""
+          date: 2023-10-20T13:47:52.543Z
+        - commits:
+            - subject: README.md ChangeType is needed for PR so add to README example
+              hash: 9f554545b218b3d00af08f1b6971605a1617ed22
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex J Lennon <ajlennon@dynamicdevices.co.uk>
+                signed-off-by: Alex J Lennon <ajlennon@dynamicdevices.co.uk>
+              author: Alex J Lennon
+              nested: []
+          version: balena-yocto-scripts-1.19.38
+          title: ""
+          date: 2023-10-11T06:39:29.551Z
+        - commits:
+            - subject: "Dockerfile_yocto-build-env: Add screen"
+              hash: 7ca8164eec0ba2903b5a463166fdb2d9370d3ba4
+              body: |
+                To enable us to use `bitbake -c devshell foo` in container
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex J Lennon <ajlennon@dynamicdevices.co.uk>
+                signed-off-by: Alex J Lennon <ajlennon@dynamicdevices.co.uk>
+              author: Alex J Lennon
+              nested: []
+          version: balena-yocto-scripts-1.19.37
+          title: ""
+          date: 2023-10-10T13:49:21.732Z
+        - commits:
+            - subject: "flowzone: allow external contributions"
+              hash: e44cdd1b12d22ffb6d93408e794defee812436c2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.19.36
+          title: ""
+          date: 2023-10-10T12:37:01.374Z
+  version: 4.0.16+rev9
+  title: ""
+  date: 2023-11-02T12:42:50.382Z
+- commits:
     - subject: remove wirless firmware to free rootfs space
       hash: 123179b6c83f8710962d29a605467c8ec6d13117
       body: |
