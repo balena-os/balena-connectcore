@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v4.0.16+rev8
+## (2023-11-02)
+
+* remove wirless firmware to free rootfs space [Alex Gonzalez]
+* deprecate codeaurora repositories [Alex Gonzalez]
+
 # v4.0.16+rev7
 ## (2023-10-03)
 

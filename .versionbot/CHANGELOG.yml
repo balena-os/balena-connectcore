@@ -1,4 +1,32 @@
 - commits:
+    - subject: remove wirless firmware to free rootfs space
+      hash: 123179b6c83f8710962d29a605467c8ec6d13117
+      body: |
+        The SOM contains a wireless chipset and although it is nice
+        to ship firmware for USB dongles there is currently no
+        rootfs space for this.
+      footer:
+        Changelog-entry: remove wirless firmware to free rootfs space
+        changelog-entry: remove wirless firmware to free rootfs space
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: deprecate codeaurora repositories
+      hash: 34c4c8a5ef09b3132d94e0c8af42dc49483eea2e
+      body: |
+        The codeaurora git repositories have been shut down.
+      footer:
+        Changelog-entry: deprecate codeaurora repositories
+        changelog-entry: deprecate codeaurora repositories
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 4.0.16+rev8
+  title: ""
+  date: 2023-11-02T12:27:33.936Z
+- commits:
     - subject: Update layers/poky to f980ef9fec58217b4b743c0ee103d5957894676a
       hash: 2b62c5cdc4e9c950ef126be92dccb6cb9d7917fc
       body: Update layers/poky
