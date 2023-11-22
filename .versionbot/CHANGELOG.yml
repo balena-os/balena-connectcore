@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update contracts to c45079c380048f9f65967a68cf30f1654195384f
+      hash: fafa69f426c16390bfc6ef59239ce9c0516f9ab3
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to c45079c380048f9f65967a68cf30f1654195384f
+        changelog-entry: Update contracts to c45079c380048f9f65967a68cf30f1654195384f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "lcbzu9: boot from internal storage"
+              hash: d9b9fbc53be0f7dbf92107681540685db703821f
+              body: >
+                Make flasher image available for download to boot lcbzu9 from
+                eMMC
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+                signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+              author: Francois Loubser
+          version: contracts-2.0.82
+          title: ""
+          date: 2023-11-22T09:57:10.502Z
+  version: 4.1.7+rev2
+  title: ""
+  date: 2023-11-22T11:44:22.018Z
+- commits:
     - subject: Update layers/poky to 455398490462728c44b9951af96c1aa61a5679e2
       hash: 8000398a9972ee27abc9c48235e0925c464b15f5
       body: Update layers/poky
