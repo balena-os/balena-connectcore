@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update contracts to 8631765cc3b0b4c6fde0941b896dbfb1b8373455
+      hash: 53e62f9c6a491e9be29fd055e98e067700801f89
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 8631765cc3b0b4c6fde0941b896dbfb1b8373455
+        changelog-entry: Update contracts to 8631765cc3b0b4c6fde0941b896dbfb1b8373455
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.2.3+rev1
+  title: ""
+  date: 2024-03-26T14:42:13.253Z
+- commits:
     - subject: Update layers/meta-balena to 90d838ae943ffa72108522bfcc4370105a3be40c
       hash: d407a453f392cf33cea4d9513153b851c9b6fccd
       body: Update layers/meta-balena
