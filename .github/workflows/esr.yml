@@ -20,13 +20,15 @@ on:
         description: OS ESR version override, for example 2.104. By default it uses the latest ESR branch.
 
 jobs:
-  esr:
+  heartbeat:
     runs-on: ubuntu-latest
     steps:
       - name: Exit on weekly runs
-        if: github.event.schedule != '0 0 2 */3 *'
+        if: github.event_name == 'schedule' && github.event.schedule != '0 0 2 */3 *'
         run: exit 1
 
-      - name: Create ESR branch and tag
-        uses: balena-os/github-workflows/.github/workflows/esr.yml@master
-        secrets: inherit
+  esr:
+      name: Create ESR branch and tag
+      if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 0 2 */3 *'
+      uses: balena-os/github-workflows/.github/workflows/esr.yml@master
+      secrets: inherit
